@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
+    <ClCompile Include="src\peon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\mundo.h" />
+    <ClInclude Include="src\peon.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

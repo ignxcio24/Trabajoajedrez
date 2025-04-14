@@ -1,7 +1,7 @@
 #include "mundo.h"
 #include "freeglut.h"
 
-Mundo mundo; //centralizamos la información en este objeto
+Mundo mundo; //centralizamos la informaciÃ³n en este objeto
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
@@ -15,9 +15,9 @@ int main(int argc,char* argv[])
 	//Inicializar el gestor de ventanas GLUT
 	//y crear la ventana
 	glutInit(&argc, argv);
-	glutInitWindowSize(800,600);
+	glutInitWindowSize(1280,800);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-	glutCreateWindow("MiJuego");
+	glutCreateWindow("GambitosSinDama");
 
 	//habilitar luces y definir perspectiva
 	glEnable(GL_LIGHT0);
@@ -25,7 +25,7 @@ int main(int argc,char* argv[])
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_COLOR_MATERIAL);	
 	glMatrixMode(GL_PROJECTION);
-	gluPerspective( 40.0, 800/600.0f, 0.1, 150);
+	gluPerspective( 40.0, 1280/800.0f, 0.1, 150);
 
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
@@ -56,7 +56,7 @@ void OnDraw(void)
 }
 void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 {
-	//poner aqui el código de teclado
+	//poner aqui el cÃ³digo de teclado
 	mundo.tecla(key);
 
 	glutPostRedisplay();
@@ -64,7 +64,7 @@ void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 
 void OnTimer(int value)
 {
-//poner aqui el código de animacion
+//poner aqui el cÃ³digo de animacion
 	mundo.mueve();
 
 	//no borrar estas lineas

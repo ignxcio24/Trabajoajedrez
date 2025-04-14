@@ -24,7 +24,7 @@
     <ClCompile Include="src\peon.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="src\Reina.cpp">
+    <ClCompile Include="src\Rey.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClInclude Include="src\peon.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="src\Reina.h">
+    <ClInclude Include="src\Rey.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

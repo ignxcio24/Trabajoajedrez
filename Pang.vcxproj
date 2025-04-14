@@ -22,11 +22,13 @@
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
     <ClCompile Include="src\peon.cpp" />
+    <ClCompile Include="src\Reina.cpp" />
     <ClCompile Include="src\Rey.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\mundo.h" />
     <ClInclude Include="src\peon.h" />
+    <ClInclude Include="src\Reina.h" />
     <ClInclude Include="src\Rey.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

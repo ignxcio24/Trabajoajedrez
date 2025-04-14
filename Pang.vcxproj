@@ -19,15 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Alfil.cpp" />
+    <ClCompile Include="src\Caballo.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
     <ClCompile Include="src\peon.cpp" />
+    <ClCompile Include="src\Reina.cpp" />
     <ClCompile Include="src\Rey.cpp" />
+    <ClCompile Include="src\Torre.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Alfil.h" />
+    <ClInclude Include="src\Caballo.h" />
     <ClInclude Include="src\mundo.h" />
     <ClInclude Include="src\peon.h" />
+    <ClInclude Include="src\Reina.h" />
     <ClInclude Include="src\Rey.h" />
+    <ClInclude Include="src\Torre.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

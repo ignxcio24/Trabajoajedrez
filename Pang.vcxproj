@@ -27,6 +27,7 @@
     <ClCompile Include="src\Reina.cpp" />
     <ClCompile Include="src\Rey.cpp" />
     <ClCompile Include="src\Torre.cpp" />
+    <ClCompile Include="src\Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alfil.h" />
@@ -36,6 +37,7 @@
     <ClInclude Include="src\Reina.h" />
     <ClInclude Include="src\Rey.h" />
     <ClInclude Include="src\Torre.h" />
+    <ClInclude Include="src\Vector3D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

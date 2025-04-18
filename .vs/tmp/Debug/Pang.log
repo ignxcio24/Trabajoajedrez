@@ -1,4 +1,18 @@
-﻿  mundo.cpp
-  pang.cpp
-  Generando código...
-  Pang.vcxproj -> C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Pang.exe
+﻿  Tablero.cpp
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(31,31): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(31,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(32,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(32,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(33,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(33,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(34,37): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(34,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(46,31): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(46,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(47,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(47,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(48,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(48,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(49,37): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\src\Tablero.cpp(49,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\Usuario\Documents\GitHub\Trabajoajedrez\bin\Pang.exe

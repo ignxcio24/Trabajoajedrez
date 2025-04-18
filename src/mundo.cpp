@@ -12,22 +12,13 @@ void Mundo::rotarOjo()
 }
 void Mundo::dibuja()
 {
-	gluLookAt(x_ojo, y_ojo, z_ojo,  // posicion del ojo
-			0.0, 0, 0.0,      // hacia que punto mira  (0,0,0) 
-			0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
+	gluLookAt(2.5f, 2.0f, 11.0f,  // posicion del ojo
+			2.5f, 2.15f, 0.0f,      // hacia que punto mira  (0,0,0) 
+			0.0f, 1.0f, 0.0f);      // definimos hacia arriba (eje Y)    
 
-	//aqui es donde hay que poner el codigo de dibujo
-	//dibujo del suelo
-	glDisable(GL_LIGHTING);
-	glBegin(GL_POLYGON);
-		glColor3ub(255,0,0);
-		glVertex3d(-5.0,0,-5.0);
-		glVertex3d(-5.0,0,5.0);
-		glColor3ub(255,255,0);
-		glVertex3d(5.0,0,5.0);	
-		glVertex3d(5.0,0,-5.0);
-	glEnd();
-	glEnable(GL_LIGHTING);
+	//LLamamos al tablero
+	tablero.dibuja();
+	
 }
 
 void Mundo::mueve()

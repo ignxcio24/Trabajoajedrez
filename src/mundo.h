@@ -1,6 +1,10 @@
+#include "Tablero.h"
 
 class Mundo
 {
+private:
+	Tablero tablero;
+
 public: 
 	void tecla(unsigned char key);
 	void inicializa();

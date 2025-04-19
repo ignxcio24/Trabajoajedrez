@@ -22,5 +22,10 @@ public:
 	//Para que los datos de nuestro constructor no cambien
 	void dibuja() const;
 
+	//Para obtener los valores de las posiciones de las piezas
+	double getTamCasilla() const { return tam_casilla; }
+	double getOffsetX() const { return x_offset; }
+	double getOffsetY() const { return y_offset; }
+
 
 };

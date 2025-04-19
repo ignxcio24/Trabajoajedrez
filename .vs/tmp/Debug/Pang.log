@@ -1,4 +1,5 @@
-﻿  peon.cpp
-  Vector3D.cpp
-  Generando código...
-  Pang.vcxproj -> C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Pang.exe
+﻿  mundo.cpp
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(34,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(35,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(36,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Pang.exe

@@ -3,7 +3,13 @@
 
 
 //Incicializamos el constructor:
-Tablero::Tablero(int f, int c, float x, float y, float tam): filas(f), columnas(c), x_offset(x), y_offset(y), tam_casilla(tam) {}
+Tablero::Tablero(int f, int c, float x, float y, float tam):
+    filas(f), 
+    columnas(c), 
+    x_offset(-(c * tam) / 2.0),
+    y_offset(-(f * tam) / 2.0),
+    tam_casilla(tam)
+{}
 
 void Tablero::dibuja() const {
     //"algoritmia" para la creación del tablero

@@ -31,13 +31,13 @@ void Tablero::dibuja() const {
             double y_pos = fila * tam_casilla + y_offset;
 
             
-            //Al ser en 2D, elegimos los cuadrados para dibujar las casillas
+            //Al ser en 3D, elegimos los cuadrados para dibujar las casillas
             //Va iterando según las posiciones de x_pos
             glBegin(GL_QUADS);
-            glVertex2f(x_pos, y_pos); //Vértice inferior izquierdo
-            glVertex2f(x_pos + tam_casilla, y_pos); //vértice inferior derecho
-            glVertex2f(x_pos + tam_casilla, y_pos + tam_casilla); //Vértice superior derecho
-            glVertex2f(x_pos, y_pos + tam_casilla); //Vértice superior izquierdo
+            glVertex3f(x_pos, y_pos, 0);
+            glVertex3f(x_pos + tam_casilla, y_pos, 0);
+            glVertex3f(x_pos + tam_casilla, y_pos+ tam_casilla, 0 );
+            glVertex3f(x_pos, y_pos + tam_casilla, 0 );
             glEnd();
 
             //A continuación vamos a crear "los bordes" que delimitan cada casilla
@@ -49,10 +49,10 @@ void Tablero::dibuja() const {
 
             glColor3f(0.0f, 0.0f, 0.0f);                    // Color negro para los bordes
             glBegin(GL_LINE_LOOP);
-            glVertex2f(x_pos, y_pos);
-            glVertex2f(x_pos + tam_casilla, y_pos);
-            glVertex2f(x_pos + tam_casilla, y_pos + tam_casilla);
-            glVertex2f(x_pos, y_pos + tam_casilla);
+            glVertex3f(x_pos, y_pos, 0);
+            glVertex3f(x_pos + tam_casilla, y_pos , 0);
+            glVertex3f(x_pos + tam_casilla, y_pos + tam_casilla, 0 );
+            glVertex3f(x_pos, y_pos + tam_casilla, 0);
             glEnd();
             
         }

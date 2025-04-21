@@ -9,7 +9,7 @@ protected:
     Vector3D posicion;  // Posición en el tablero
     bool es_blanca;     // true = blanca, false = negra
 	friend class Peon; // Permite que la clase Peon acceda a los miembros protegidos de Pieza
-
+    friend class Torre;// Permite que la clase torre acceda a los miembros protegidos de Pieza
 public:
     Pieza(Vector3D pos, bool blanca) : posicion(pos), es_blanca(blanca) {}
 

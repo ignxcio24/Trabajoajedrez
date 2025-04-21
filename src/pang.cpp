@@ -66,7 +66,7 @@ void OnTimer(int value)
 {
 //poner aqui el código de animacion
 	mundo.mueve();
-
+	mundo.rotarOjo();//para rotar la vista en funcion de si le toca al jugador 1 o al 2
 	//no borrar estas lineas
 	glutTimerFunc(25,OnTimer,0);
 	glutPostRedisplay();

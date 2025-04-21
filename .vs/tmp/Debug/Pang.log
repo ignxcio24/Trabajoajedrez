@@ -1,5 +1,34 @@
-﻿  mundo.cpp
-C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(34,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(35,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(36,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-  Pang.vcxproj -> C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Pang.exe
+﻿  Alfil.cpp
+  Caballo.cpp
+  mundo.cpp
+  pang.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.cpp(34,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.cpp(35,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.cpp(36,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  peon.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\peon.cpp(9,52): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\peon.cpp(8,61): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Pieza.cpp
+  Reina.cpp
+  Rey.cpp
+  Tablero.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(37,31): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(37,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(38,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(38,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(39,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(39,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(40,37): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(40,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(52,31): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(52,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(53,45): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(53,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(54,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(54,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(55,37): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Tablero.cpp(55,24): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Torre.cpp
+  Vector3D.cpp
+  Generando código...
+  Pang.vcxproj -> C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\bin\Pang.exe

@@ -6,7 +6,9 @@ Rey::Rey() {
 }
 Rey::~Rey() {}
 
-
+bool Rey::mueve() {
+    return true;
+}
 
 void Rey::dibujaIndividual() const {
     glPushMatrix();

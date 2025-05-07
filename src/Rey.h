@@ -8,5 +8,5 @@ public:
     virtual ~Rey();
 
     virtual void dibujaIndividual() const;
-    
+    bool mueve();
 };

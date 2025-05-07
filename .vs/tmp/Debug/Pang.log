@@ -1,5 +1,0 @@
-﻿  mundo.cpp
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(47,12): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(48,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(49,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-  Pang.vcxproj -> C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Pang.exe

@@ -1,25 +1,36 @@
 #pragma once
-#pragma once
-#include "Vector3D.h"
-#include <freeglut.h>
+
+#include "vector2D.h"
+#include "color.h"
+#include "tablero.h"    
+#include <array>
+#include <string>
+#include <memory>
+#include <cmath>
+
+GLUquadric* getSharedQuadric();
 
 class Pieza {
-protected:
+protected: // Miembros accesibles por las clases derivadas.
+    float size;         
+    Color color;        
+    vector2D posicion;  
 
-    Vector3D posicion;  // Posición en el tablero
-    bool es_blanca;     // true = blanca, false = negra
-	friend class Peon; // Permite que la clase Peon acceda a los miembros protegidos de Pieza
-    friend class Torre;// Permite que la clase torre acceda a los miembros protegidos de Pieza
-public:
-    Pieza(Vector3D pos, bool blanca) : posicion(pos), es_blanca(blanca) {}
+    std::array<std::array<int, 6>, 5> board;  // 5 COLUMNAS × 6 FILAS
+                                            
 
-    virtual void dibuja(float tam_casilla, float offset_x, float offset_y) const = 0; // Método abstracto para dibujar la pieza
-    virtual bool movimiento_valido(Vector3D destino) const = 0; // A implementar en cada tipo de pieza
+public: // Miembros accesibles desde cualquier parte en la que se añade la clase.
+    Pieza();
+    virtual ~Pieza();
 
-    Vector3D get_posicion() const { return posicion; }
-    void set_posicion(Vector3D pos) { posicion = pos; }
-    bool esBlanca() const { return es_blanca; }
+    inline void setColor(const Color& c) { color = c; }
+    inline void setPosicion(float ix, float iz) {
+        posicion.x = ix;
+        posicion.z = iz;
+    }
+    virtual void dibujaIndividual() const {}
 
-    virtual ~Pieza() = default;
+    std::array<std::array<int, 6>, 5>& getBoard();
+    Pieza* createPiece(int pieceValue) const;
+    void dibuja() const;
 };
-

@@ -1,25 +1,15 @@
 #include "caballo.h"
 #include "freeglut.h"
 
+Caballo::Caballo() {
+    size = 1.0f;
+}
+Caballo::~Caballo() {}
 
-// Constructor de la clase Caballo
-Caballo::Caballo()
-{
-	size = 1.0f;
+bool Caballo::mueve() {
+    return true;
 }
 
-
-// Destructor de la clase Caballo
-Caballo::~Caballo(){}
-
-
-// Funcion para mover el caballo
-bool Caballo mueve() {
-	return true;
-}
-
-
-// Funcion para dibujar el caballo
 void Caballo::dibujaIndividual() const {
     glPushMatrix();
     glTranslatef(posicion.x, 0.4f, posicion.z);
@@ -67,7 +57,4 @@ void Caballo::dibujaIndividual() const {
     glRotatef(30, -1, 0, 0);
     glutSolidCone(size * 0.08f, size * 0.18f, 4, 4);
     glPopMatrix();
-
 }
-
-

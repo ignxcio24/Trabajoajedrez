@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\Alfil.cpp" />
-    <ClCompile Include="src\Caballo.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
     <ClCompile Include="src\peon.cpp" />
@@ -12,10 +11,10 @@
     <ClCompile Include="src\Vector3D.cpp" />
     <ClCompile Include="src\Tablero.cpp" />
     <ClCompile Include="src\Pieza.cpp" />
+    <ClCompile Include="src\caballo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alfil.h" />
-    <ClInclude Include="src\Caballo.h" />
     <ClInclude Include="src\mundo.h" />
     <ClInclude Include="src\peon.h" />
     <ClInclude Include="src\Reina.h" />
@@ -24,5 +23,6 @@
     <ClInclude Include="src\Vector3D.h" />
     <ClInclude Include="src\Tablero.h" />
     <ClInclude Include="src\Pieza.h" />
+    <ClInclude Include="src\caballo.h" />
   </ItemGroup>
 </Project>

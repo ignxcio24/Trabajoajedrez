@@ -2,22 +2,18 @@
 
 #include "pieza.h"
 
-class Caballo: public Pieza // Uso de la HERENCIA
-{
-
+class Caballo : public Pieza { // Uso de la HERENCIA
 public:
-	// Constructor
-	Caballo();
+    // CONSTRUCTOR
+    Caballo();
 
-	// Destructor
-	virtual ~Caballo();
-	
+    // DESTRUCTOR
+    virtual ~Caballo();
 
-	// Funcion que dibuja la pieza
-	virtual void dibujaIndividual() const;
+    // FUNCION QUE DIBUJA LA PIEZA
+    virtual void dibujaIndividual() const;
 
-	// Funcion que mueve la pieza
-	bool mueve();
+    // FUNCION QUE MUEVE LA PIEZA
+    bool mueve();
 
 };
-

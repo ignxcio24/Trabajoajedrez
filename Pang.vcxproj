@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Alfil.cpp" />
-    <ClCompile Include="src\Caballo.cpp" />
+    <ClCompile Include="src\caballo.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
     <ClCompile Include="src\peon.cpp" />
@@ -33,7 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alfil.h" />
-    <ClInclude Include="src\Caballo.h" />
+    <ClInclude Include="src\caballo.h" />
     <ClInclude Include="src\mundo.h" />
     <ClInclude Include="src\peon.h" />
     <ClInclude Include="src\Pieza.h" />

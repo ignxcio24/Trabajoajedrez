@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\pang.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\pang.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -46,37 +54,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Pieza.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.cpp",
-              "RelativeDocumentMoniker": "src\\pieza.cpp",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.cpp",
-              "RelativeToolTip": "src\\pieza.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T19:42:34.611Z",
+              "Title": "Pieza.h",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h",
+              "RelativeDocumentMoniker": "src\\pieza.h",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h",
+              "RelativeToolTip": "src\\pieza.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-07T18:26:49.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "pang.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp",
-              "RelativeDocumentMoniker": "src\\pang.cpp",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp",
-              "RelativeToolTip": "src\\pang.cpp",
+              "Title": "color.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp",
+              "RelativeDocumentMoniker": "src\\color.cpp",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp",
+              "RelativeToolTip": "src\\color.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-07T18:32:33.896Z",
+              "WhenOpened": "2025-05-09T07:32:22.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "color.h",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.h",
+              "RelativeDocumentMoniker": "src\\color.h",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.h",
+              "RelativeToolTip": "src\\color.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T07:32:06.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Rey.cpp",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Rey.cpp",
               "RelativeDocumentMoniker": "src\\Rey.cpp",
@@ -88,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Rey.h",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Rey.h",
               "RelativeDocumentMoniker": "src\\Rey.h",
@@ -100,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Caballo.h",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Caballo.h",
               "RelativeDocumentMoniker": "src\\Caballo.h",
@@ -112,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Caballo.cpp",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Caballo.cpp",
               "RelativeDocumentMoniker": "src\\Caballo.cpp",
@@ -120,12 +141,11 @@
               "RelativeToolTip": "src\\Caballo.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-07T18:25:38.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T18:25:38.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Alfil.cpp",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
@@ -137,20 +157,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pieza.h",
-              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Pieza.h",
-              "RelativeDocumentMoniker": "src\\Pieza.h",
-              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\Pieza.h",
-              "RelativeToolTip": "src\\Pieza.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-07T18:26:49.887Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "pang.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp",
+              "RelativeDocumentMoniker": "src\\pang.cpp",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pang.cpp",
+              "RelativeToolTip": "src\\pang.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-07T18:32:33.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "Pieza.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.cpp",
+              "RelativeDocumentMoniker": "src\\pieza.cpp",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.cpp",
+              "RelativeToolTip": "src\\pieza.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T19:42:34.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "mundo.cpp",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\mundo.cpp",
               "RelativeDocumentMoniker": "src\\mundo.cpp",

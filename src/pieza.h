@@ -16,10 +16,10 @@ protected: // Miembros accesibles por las clases derivadas.
     Color color;        
     vector2D posicion;  
 
-    std::array<std::array<int, 6>, 5> board;  // 5 COLUMNAS × 6 FILAS
+    std::array<std::array<int, 6>, 5> board;  // 5 COLUMNAS Ã— 6 FILAS
                                             
 
-public: // Miembros accesibles desde cualquier parte en la que se añade la clase.
+public: // Miembros accesibles desde cualquier parte en la que se aÃ±ade la clase.
     Pieza();
     virtual ~Pieza();
 

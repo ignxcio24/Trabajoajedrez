@@ -12,7 +12,6 @@
 
 #include "reglas.h"
 
-
 Pieza::Pieza() :
     size(1.0f),
     color(none),
@@ -29,7 +28,7 @@ std::array<std::array<int, 6>, 5>& Pieza::getBoard() {
 Pieza* Pieza::createPiece(int pieceValue) const {
     if (pieceValue == 0)
         return nullptr;
-    int type = std::abs(pieceValue);
+    int type = abs(pieceValue);
     Pieza* piece = nullptr;
     switch (type) {
     case 1:

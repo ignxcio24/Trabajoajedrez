@@ -25,6 +25,23 @@ std::array<std::array<int, 6>, 5>& Pieza::getBoard() {
     return board;
 }
 
+vector2D Pieza::getSeleccion() const {
+    return seleccion;
+}
+void Pieza::deseleccionar() {
+    seleccion = vector2D(-1, -1);
+}
+void Pieza::seleccionar(int ix, int iz, int turnFlag, Tablero& platform) {
+    int val = board[ix][iz];
+    if (val == 0)
+        return;
+    if ((turnFlag == 0 && val < 0) || (turnFlag == 1 && val > 0))
+        return;
+    seleccion = vector2D(static_cast<float>(ix), static_cast<float>(iz));
+    platform.resetTileColors();
+    Reglas::displayValidMoves(val, seleccion, board, platform.getTiles());
+}
+
 Pieza* Pieza::createPiece(int pieceValue) const {
     if (pieceValue == 0)
         return nullptr;
@@ -89,3 +106,5 @@ void Pieza::dibuja() const {
         }
     }
 }
+
+

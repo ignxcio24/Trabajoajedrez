@@ -29,8 +29,11 @@ public: // Miembros accesibles desde cualquier parte en la que se añade la clas
         posicion.z = iz;
     }
     virtual void dibujaIndividual() const {}
-
     std::array<std::array<int, 6>, 5>& getBoard();
+    vector2D getSeleccion() const;
+    void deseleccionar();
+    void seleccionar(int ix, int iz, int turnFlag, Tablero& platform);
+
     Pieza* createPiece(int pieceValue) const;
     void dibuja() const;
 };

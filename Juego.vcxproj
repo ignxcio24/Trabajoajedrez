@@ -21,23 +21,37 @@
   <ItemGroup>
     <ClCompile Include="src\alfil.cpp" />
     <ClCompile Include="src\caballo.cpp" />
+    <ClCompile Include="src\color.cpp" />
+    <ClCompile Include="src\computador.cpp" />
+    <ClCompile Include="src\losa.cpp" />
+    <ClCompile Include="src\menu.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\juego.cpp" />
     <ClCompile Include="src\peon.cpp" />
+    <ClCompile Include="src\pieza.cpp" />
     <ClCompile Include="src\reina.cpp" />
     <ClCompile Include="src\rey.cpp" />
+    <ClCompile Include="src\reglas.cpp" />
     <ClCompile Include="src\plataforma.cpp" />
     <ClCompile Include="src\torre.cpp" />
+    <ClCompile Include="src\vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\alfil.h" />
     <ClInclude Include="src\caballo.h" />
+    <ClInclude Include="src\color.h" />
+    <ClInclude Include="src\computador.h" />
+    <ClInclude Include="src\losa.h" />
+    <ClInclude Include="src\menu.h" />
     <ClInclude Include="src\mundo.h" />
     <ClInclude Include="src\peon.h" />
+    <ClInclude Include="src\pieza.h" />
     <ClInclude Include="src\reina.h" />
     <ClInclude Include="src\rey.h" />
+    <ClInclude Include="src\reglas.h" />
     <ClInclude Include="src\plataforma.h" />
     <ClInclude Include="src\torre.h" />
+    <ClInclude Include="src\vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -45,6 +59,7 @@
     <ProjectGuid>{e575fade-b6eb-4154-a1ed-8067a12eae98}</ProjectGuid>
     <RootNamespace>Pang</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Juego</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -9,7 +9,6 @@
 #include "alfil.h"
 #include "reina.h"
 #include "rey.h"
-
 #include "reglas.h"
 
 GLUquadric* getSharedQuadric() {
@@ -22,7 +21,8 @@ Pieza::Pieza() :
     posicion(0.0f, 0.0f),
     seleccion(-1, -1), board({}),
     othermode(false)
-{}
+{
+}
 Pieza::~Pieza() {}
 
 std::array<std::array<int, 6>, 5>& Pieza::getBoard() {
@@ -44,7 +44,7 @@ void Pieza::seleccionar(int ix, int iz, int turnFlag, Tablero& platform) {
     platform.resetTileColors();
     Reglas::displayValidMoves(val, seleccion, board, platform.getTiles());
 }
-void Pieza::guardarTablero(const std::string& filename, bool turnFlag) {
+void Pieza::guardarTablero(const std::string& filename, bool turnFlag, bool openingFlag) {
     deseleccionar();
     std::ofstream file(filename);
     if (!file) {
@@ -57,10 +57,10 @@ void Pieza::guardarTablero(const std::string& filename, bool turnFlag) {
         }
         file << '\n';
     }
-    file << turnFlag << '\n';
+    file << turnFlag << openingFlag << '\n';
     std::cout << "Ultimo tablero guardado exitosamente.\n";
 }
-void Pieza::cargarTablero(const std::string& filename, bool& turnFlag) {
+void Pieza::cargarTablero(const std::string& filename, bool& turnFlag, bool& openingFlag) {
     std::ifstream file(filename);
     if (!file) {
         std::cerr << "Error. No se pudo cargar el ultimo tablero guardado.\n";
@@ -71,7 +71,7 @@ void Pieza::cargarTablero(const std::string& filename, bool& turnFlag) {
             file >> board[x][z];
         }
     }
-    file >> turnFlag;
+    file >> turnFlag >> openingFlag;
     std::cout << "Ultimo tablero guardado cargado exitosamente\n";
 }
 void Pieza::setMode(bool omod) {
@@ -143,11 +143,11 @@ void Pieza::dibuja() const {
                 continue;
             // Coronazion del peon
             if (value == 1 && z == 5) {
-				value = 5; // Reina
+                value = 5; // Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
-			}
-			else if (value == -1 && z == 0) {
-				value = -5; // Reina
+            }
+            else if (value == -1 && z == 0) {
+                value = -5; // Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
             }
             Pieza* piece = createPiece(value);

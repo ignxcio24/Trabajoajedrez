@@ -1,15 +1,20 @@
 #include "rey.h"
 #include "freeglut.h"
 
+// Declaración del constructor del rey
 Rey::Rey() {
     size = 1.0f;
 }
+
+// Destructor del rey
 Rey::~Rey() {}
 
+// Método para mover el rey
 bool Rey::mueve() {
     return true;
 }
 
+// Método para dibujar el rey 
 void Rey::dibujaIndividual() const {
     glPushMatrix();
     glTranslatef(posicion.x, 0.4f, posicion.z);

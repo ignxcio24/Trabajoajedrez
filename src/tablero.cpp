@@ -5,6 +5,7 @@
 #include "losa.h"
 #include <array>
 
+// Constructor del tablero
 Tablero::Tablero(): 
 color(border), limite({ 6, 7 }) 
 {
@@ -21,8 +22,12 @@ color(border), limite({ 6, 7 })
 		}
 	}
 }
+
+// Destructor del tablero
 Tablero::~Tablero() {}
 
+
+// Método que dibuja el tablero
 void Tablero::dibuja() const {
 	glBegin(GL_QUADS);
 	// Abajo
@@ -74,9 +79,13 @@ void Tablero::dibuja() const {
         }
     }
 }
+
+// Método que devuelve una referencia a la matriz de losas del tablero
 std::array<std::array<Losa, 6>, 5>& Tablero::getTiles() {
 	return tiles;
 }
+
+// Método que restablece los colores de las losas de información de movimiento del tablero
 void Tablero::resetTileColors() {
 	for (int j = 0; j < 6; ++j) {
 		for (int i = 0; i < 5; ++i) {

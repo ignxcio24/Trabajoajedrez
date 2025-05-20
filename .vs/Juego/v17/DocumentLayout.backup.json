@@ -11,20 +11,8 @@
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
 =======
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\plataforma.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\plataforma.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reglas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -107,12 +95,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "pieza.cpp",
               "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.cpp",
               "RelativeDocumentMoniker": "src\\pieza.cpp",
@@ -122,28 +110,14 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-18T14:42:54.082Z",
 =======
-              "DocumentIndex": 3,
-              "Title": "reglas.cpp",
-              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp",
-              "RelativeDocumentMoniker": "src\\reglas.cpp",
-              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp",
-              "RelativeToolTip": "src\\reglas.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-18T14:37:29.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "reglas.h",
-              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.h",
-              "RelativeDocumentMoniker": "src\\reglas.h",
-              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.h",
-              "RelativeToolTip": "src\\reglas.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "tablero.h",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\tablero.h",
+              "RelativeDocumentMoniker": "src\\tablero.h",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\tablero.h",
+              "RelativeToolTip": "src\\tablero.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-18T14:37:27.371Z",
+              "WhenOpened": "2025-05-18T14:37:24.077Z",
 >>>>>>> 10d79e9cad2243a10d3595bc233a4570e8823339
               "EditorCaption": ""
             },
@@ -160,32 +134,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-18T14:42:49.707Z",
 =======
-              "Title": "plataforma.cpp",
-              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp",
-              "RelativeDocumentMoniker": "src\\plataforma.cpp",
-              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp",
-              "RelativeToolTip": "src\\plataforma.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-18T14:37:25.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "plataforma.h",
-              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.h",
-              "RelativeDocumentMoniker": "src\\plataforma.h",
-              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.h",
-              "RelativeToolTip": "src\\plataforma.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-18T14:37:24.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "pieza.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.cpp",
               "RelativeDocumentMoniker": "src\\pieza.cpp",
@@ -198,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "pieza.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.h",
               "RelativeDocumentMoniker": "src\\pieza.h",
@@ -211,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "peon.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\peon.cpp",
               "RelativeDocumentMoniker": "src\\peon.cpp",
@@ -224,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "peon.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\peon.h",
               "RelativeDocumentMoniker": "src\\peon.h",
@@ -237,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "mundo.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\mundo.cpp",
               "RelativeDocumentMoniker": "src\\mundo.cpp",
@@ -250,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "mundo.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\mundo.h",
               "RelativeDocumentMoniker": "src\\mundo.h",
@@ -263,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "menu.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\menu.cpp",
               "RelativeDocumentMoniker": "src\\menu.cpp",
@@ -276,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "menu.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\menu.h",
               "RelativeDocumentMoniker": "src\\menu.h",
@@ -289,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "losa.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\losa.cpp",
               "RelativeDocumentMoniker": "src\\losa.cpp",
@@ -302,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "losa.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\losa.h",
               "RelativeDocumentMoniker": "src\\losa.h",
@@ -315,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "computador.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\computador.cpp",
               "RelativeDocumentMoniker": "src\\computador.cpp",
@@ -328,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "computador.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\computador.h",
               "RelativeDocumentMoniker": "src\\computador.h",
@@ -341,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "color.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\color.cpp",
               "RelativeDocumentMoniker": "src\\color.cpp",
@@ -354,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "color.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\color.h",
               "RelativeDocumentMoniker": "src\\color.h",
@@ -367,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "caballo.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\caballo.cpp",
               "RelativeDocumentMoniker": "src\\caballo.cpp",
@@ -380,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "caballo.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\caballo.h",
               "RelativeDocumentMoniker": "src\\caballo.h",
@@ -393,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "alfil.cpp",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
@@ -406,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "alfil.h",
               "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",

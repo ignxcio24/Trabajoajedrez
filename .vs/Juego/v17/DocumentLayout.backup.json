@@ -7,9 +7,6 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -25,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "mundo.cpp",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\mundo.cpp",
               "RelativeDocumentMoniker": "src\\mundo.cpp",
@@ -37,12 +34,11 @@
               "RelativeToolTip": "src\\mundo.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T16:38:20.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T16:38:20.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "torre.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
@@ -50,21 +46,7 @@
               "RelativeToolTip": "src\\Torre.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-25T16:37:52.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "torre.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\torre.cpp",
-              "RelativeDocumentMoniker": "..\\..\\Trabajo_infor_jo\\src\\torre.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\torre.cpp",
-              "RelativeToolTip": "..\\..\\Trabajo_infor_jo\\src\\torre.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-25T16:38:50.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T16:37:52.151Z"
             },
             {
               "$type": "Document",
@@ -74,7 +56,7 @@
               "RelativeDocumentMoniker": "src\\Torre.cpp",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Torre.cpp",
               "RelativeToolTip": "src\\Torre.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-25T16:37:31.747Z",
               "EditorCaption": ""

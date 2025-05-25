@@ -1,7 +1,9 @@
 #pragma once
-class Alfil
-{
-public:
-    void mover(); // ← Esta línea es nueva, solo para probar
-};
 
+#include "pieza.h"
+
+class Alfil : public Pieza {
+public:
+    Alfil();
+    virtual ~Alfil();
+};

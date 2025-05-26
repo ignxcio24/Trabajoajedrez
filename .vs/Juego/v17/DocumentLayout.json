@@ -7,7 +7,8 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -19,10 +20,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,22 +51,9 @@
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Alfil.cpp",
               "RelativeToolTip": "src\\Alfil.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-26T14:02:42.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\alfil.cpp",
-              "RelativeDocumentMoniker": "..\\..\\Trabajo_infor_jo\\src\\alfil.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_infor_jo\\src\\alfil.cpp",
-              "RelativeToolTip": "..\\..\\Trabajo_infor_jo\\src\\alfil.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-26T14:02:35.609Z",
               "EditorCaption": ""
             },
             {
@@ -82,8 +66,7 @@
               "RelativeToolTip": "..\\..\\Trabajo_infor_jo\\src\\alfil.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T14:02:26.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T14:02:26.657Z"
             },
             {
               "$type": "Document",
@@ -107,12 +90,11 @@
               "RelativeToolTip": "src\\pieza.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-26T06:56:43.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T06:56:43.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "alfil.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",
@@ -120,11 +102,12 @@
               "RelativeToolTip": "src\\Alfil.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-25T20:47:26.879Z"
+              "WhenOpened": "2025-05-25T20:47:26.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "mundo.cpp",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\mundo.cpp",
               "RelativeDocumentMoniker": "src\\mundo.cpp",
@@ -136,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "torre.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
@@ -148,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "torre.cpp",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\3_curso_ingenier\u00EDa\\2_cuatrimestre\\Inform\u00E1tica industrial\\Trabajo_ajedrez_def\\Trabajoajedrez\\src\\Torre.cpp",
               "RelativeDocumentMoniker": "src\\Torre.cpp",

@@ -147,11 +147,11 @@ void Mundo::tecla(unsigned char key) {
                 inicializa();
                 break;
             case 'g': case 'G':
-                piezas.guardarTablero("lastboard.txt", turnFlag);
+                piezas.guardarTablero("lastboard.txt", turnFlag,openingFlag);
                 break;
             case 'c': case 'C':
                 inicializa();
-                piezas.cargarTablero("lastboard.txt", turnFlag);
+                piezas.cargarTablero("lastboard.txt", turnFlag, openingFlag);
                 openingFlag = false;
                 if (turnFlag) {
                     rotationFlag = true;

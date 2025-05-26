@@ -75,9 +75,9 @@ void Pieza::cargarTablero(const std::string& filename, bool& turnFlag, bool& ope
     std::cout << "Ultimo tablero guardado cargado exitosamente\n";
 }
 void Pieza::setMode(bool omod) {
-    othermode = omod;
-    if (!othermode) {
-        // ESQUINAS OPUESTAS
+    othermode = omod; //Guarda el valor recibido
+    if (!othermode) { //Si el modo es falso: esquinas opuestas
+        //////////"ESQUINAS OPUESTAS" //////////
         std::array<std::array<int, 6>, 5> initBoard = { {
             { 2,  1,  0,  0, -1, -6 },
             { 3,  1,  0,  0, -1, -5 },
@@ -85,10 +85,10 @@ void Pieza::setMode(bool omod) {
             { 5,  1,  0,  0, -1, -3 },
             { 6,  1,  0,  0, -1, -2 }
         } };
-        board = initBoard;
+        board = initBoard; //Asigna el tablero a la clase
     }
-    else {
-        // PETTY
+	else {          //Si el modo es verdadero: PETTY
+        //////////"PETTY"//////////
         std::array<std::array<int, 6>, 5> initBoard = { {
             { 5,  1,  0,  0, -1, -5 },
             { 6,  1,  0,  0, -1, -6 },
@@ -98,7 +98,7 @@ void Pieza::setMode(bool omod) {
         } };
         board = initBoard;
     }
-    deseleccionar();
+    deseleccionar();  //Al cambiar de modo, se deselecciona cualquier casilla previamente activa
 }
 Pieza* Pieza::createPiece(int pieceValue) const {
     if (pieceValue == 0)

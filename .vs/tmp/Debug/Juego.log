@@ -3,46 +3,45 @@
   color.cpp
   computador.cpp
   losa.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/caballo.cpp")
-  
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.h(3,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/computador.cpp")
-  
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\computador.cpp(20,25): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\computador.cpp(171,29): error C2065: 'bestKingOrigVal': identificador no declarado
   menu.cpp
   mundo.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.h(1,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/mundo.cpp")
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(150,24): error C2660: 'Pieza::guardarTablero': la función no acepta 2 argumentos
+      C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\pieza.h(39,10):
+      vea la declaración de 'Pieza::guardarTablero'
+      C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(150,24):
+      al hacer coincidir la lista de argumentos '(const char [14], bool)'
+  
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(154,24): error C2660: 'Pieza::cargarTablero': la función no acepta 2 argumentos
+      C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\pieza.h(40,10):
+      vea la declaración de 'Pieza::cargarTablero'
+      C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp(154,24):
+      al hacer coincidir la lista de argumentos '(const char [14], bool)'
   
   juego.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.h(1,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/juego.cpp")
-  
   peon.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/peon.cpp")
-  
   pieza.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/pieza.cpp")
-  
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\pieza.cpp(156,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\pieza.cpp(156,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   reina.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/reina.cpp")
-  
   rey.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/rey.cpp")
-  
   reglas.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.h(3,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/reglas.cpp")
-  
-  plataforma.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\plataforma.cpp(1,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(14,162): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(14,173): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,70): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,81): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,134): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,145): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,212): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,223): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,277): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(25,288): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(38,21): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp(38,45): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+  tablero.cpp
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\tablero.cpp(14,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\david\OneDrive\Documentos\GitHub\Trabajoajedrez\src\tablero.cpp(14,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   torre.cpp
-C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\Pieza.h(5,10): error C1083: No se puede abrir el archivo incluir: 'tablero.h': No such file or directory
-  (compilando archivo de origen "src/torre.cpp")
-  
   vector2D.cpp
   Generando código...

@@ -6,4 +6,7 @@ class Alfil : public Pieza {
 public:
     Alfil();
     virtual ~Alfil();
+
+    virtual void dibujaIndividual() const;
+    bool mueve();
 };

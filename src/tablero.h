@@ -4,7 +4,7 @@
 #include "losa.h"
 #include <vector>
 #include <array>
-
+#include "ETSIDI.h"
 class Tablero
 {
 private:

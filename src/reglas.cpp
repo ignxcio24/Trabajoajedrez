@@ -50,6 +50,7 @@ void Reglas::displayValidMoves(int piece, vector2D origen, std::array<std::array
             if (moveChecker(piece, origen, { static_cast<float>(i), static_cast<float>(j) }, board)) {
                 //std::cout << i << ", " << j << " mov. valido\n";
                 tiles[i][j].setColor({valid});//muestra con un color diferente, las casillas a las que se puede mover la pieza seleccionada
+               
             }
         }
     }
@@ -84,6 +85,7 @@ bool Reglas::jaque(bool turnFlag, std::array<std::array<int, 6>, 5>& board, std:
             if (moveChecker(attackingPiece, attackerPos, enemyKingPos, board)) {
                 displayDanger(enemyKingPos, tiles); // REY EN PELIGRO
                 displayDangerous(attackerPos, tiles); // ATACANTE PELIGROSO
+                
                 return true; // JAQUE
             }
         }
@@ -151,10 +153,12 @@ bool Reglas::jaqueMate(bool turnFlag, std::array<std::array<int, 6>, 5>& board, 
                     }
                     if (!kingStillInCheck) {
                         legalMoveFound = true;
+
                     }
                 }
             }
         }
     }
+
     return !legalMoveFound;
 }

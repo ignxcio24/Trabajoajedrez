@@ -21,7 +21,10 @@ Pieza::Pieza() :
     posicion(0.0f, 0.0f),
     seleccion(-1, -1), board({}),
     othermode(false)
+    
 {
+    sprite.setCenter(0, 0);
+    sprite.setSize(0, 0);
 }
 Pieza::~Pieza() {}
 
@@ -41,6 +44,7 @@ void Pieza::seleccionar(int ix, int iz, int turnFlag, Tablero& platform) {
     if ((turnFlag == 0 && val < 0) || (turnFlag == 1 && val > 0))
         return;
     seleccion = vector2D(static_cast<float>(ix), static_cast<float>(iz));
+   
     platform.resetTileColors();
     Reglas::displayValidMoves(val, seleccion, board, platform.getTiles());
 }
@@ -145,10 +149,12 @@ void Pieza::dibuja() const {
             if (value == 1 && z == 5) {
                 value = 5; // Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
+                ETSIDI::play("sonidos/upgradereina.mp3");
             }
             else if (value == -1 && z == 0) {
                 value = -5; // Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
+                ETSIDI::play("sonidos/upgradereina.mp3");
             }
             Pieza* piece = createPiece(value);
             if (!piece)

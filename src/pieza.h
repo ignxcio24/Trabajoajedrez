@@ -7,6 +7,7 @@
 #include <string>
 #include <memory>
 #include <cmath>
+#include "ETSIDI.h"
 
 GLUquadric* getSharedQuadric(); // Esta función apunta a un objeto para figuras curvas, 
                                 //y además gracias a getSharedQuadric, reutilizamos el objeto.
@@ -20,7 +21,7 @@ protected: // Con este parámetro pueden acceder nuestras clases derivadas
     std::array<std::array<int, 6>, 5> board;  // Representación del tablero
     vector2D seleccion;      // Posición seleccionada
     bool othermode;          // Modo de juego
-
+    ETSIDI::SpriteSequence sprite{ "imagenes/pangPlayer.png", 5 };
 public: // Miembros accesibles desde cualquier parte en la que se añade la clase.
     Pieza(); //Constructor por defecto
     virtual ~Pieza();

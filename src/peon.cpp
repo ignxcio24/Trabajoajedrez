@@ -3,6 +3,8 @@
 
 Peon::Peon() {
     size = 1.0f;
+    sprite.setCenter(0, 0);
+    sprite.setSize(0, 0);
 }
 Peon::~Peon() {}
 
@@ -34,6 +36,7 @@ void Peon::dibujaIndividual() const {
         glutSolidCone(size * 0.0875f, size * 0.245f, 4, 4);
         glRotatef(90, 0, -1, 0);
         glutSolidCone(size * 0.0875f, size * 0.245f, 4, 4);
+       // sprite.setState(0);
     }
     else {
         glTranslatef(0, 0, size * 0.175f);

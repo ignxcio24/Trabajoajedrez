@@ -1,7 +1,7 @@
 #include <array>
 #include "vector2D.h"
 #include "tablero.h"
-
+#include "ETSIDI.h"
 class Reglas {
 public:
     Reglas();

@@ -29,6 +29,14 @@ Tablero::~Tablero() {}
 
 // Método que dibuja el tablero
 void Tablero::dibuja() const {
+	
+	glEnable(GL_TEXTURE_2D);
+	//glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/fondo.png").id);
+	glDisable(GL_LIGHTING);
+	glTexCoord2d(0, 1); glVertex2d(-10, 0);
+	glTexCoord2d(1, 1); glVertex2d(10, 0);
+	glTexCoord2d(1, 0); glVertex2d(10, 15);
+	glTexCoord2d(0, 0); glVertex2d(-10, 15);
 	glBegin(GL_QUADS);
 	// Abajo
 	glNormal3f(0.0f, -1.0f, 0.0f);
@@ -78,6 +86,8 @@ void Tablero::dibuja() const {
             tile.dibuja();
         }
     }
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
 }
 
 // Método que devuelve una referencia a la matriz de losas del tablero

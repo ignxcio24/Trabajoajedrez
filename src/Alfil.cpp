@@ -6,12 +6,11 @@ Alfil::Alfil() {
 }
 Alfil::~Alfil() {}
 
-//Mueve el alfil
 bool Alfil::mueve() {
     return true;
 }
-//Dibujo del alfil
-void Alfil::dibujaIndividual() const {
+
+void Alfil::dibuja() const {
     glPushMatrix();
     glTranslatef(posicion.x, 0.4f, posicion.z);
     glColor4ub(color.r, color.g, color.b, color.a);

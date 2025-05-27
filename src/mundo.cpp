@@ -10,48 +10,36 @@
 Pantalla currentScreen = START;
 
 Mundo::Mundo() :
-    //Inicialización de variables, inicia el ojo y todos los flags posteriores en false que sirven para realizar
-    //acciones en el juego, como por ejemplo el modo de juego, si se ha hecho click o no, si se ha terminado la partida, etc.
+    // CAMARA
     x_ojo(3.0f), y_ojo(4.9f), z_ojo(-1.0f),
+    // ROTACION
     angle(-1.5707963268f), targetAngle(angle),
-    modeFlag(false), //Cambia el modo de juego a modo normal y si esta en false estás en esquinas opuestas pulsando "T"
-    turnFlag(false), //Define el turno actual, si está en false le toca a blanco si está en true a negro 
-    clickFlag(true), //Permite que hagas click con el ratón si está en true
-    rotationFlag(false), //Controla si la cámara se está girando, si está en true, gira
-    modelviewFlag(true), // Define cámara cenital o rotativa, si está en true es cámara rotativa
-    //Si está nen rotativa es 3D si no 2D
-    fullscrnFlag(false), //Define si está el modo antalla competa activado con la letra "F"
-    endFlag(false), //Fin de partida alcanzado
-    jaqueFlag(false), //Indica si el jugador contrario está en jaque
-    autopilotFlag(false), //define si está activado el mod jugador vs máquina [true=jugador vs máquina, false jugador vs jugador]
-    openingFlag(true) //Para pasar de la pantalla de inicio a la del juego
+    // FLAGS DE INTERFAZ GRAFICA
+    clickFlag(true), rotationFlag(false), modelviewFlag(true), fullscrnFlag(false),  
+    // FLAGS DE INTERFAZ DE JUEGO
+    turnFlag(false), jaqueFlag(false), modeFlag(false), autopilotFlag(false),
+    // ONE-TIME-USE FLAGS (POR PARTIDA) 
+    openingFlag(true), endFlag(false), blackCastlingF(true), whiteCastlingF(true)
 {}
 void Mundo::rotarOjo() {
-    //Primer requisito, si el rotationFlag está activado(true), cambia la cámara
     if (!rotationFlag)
         return;
-    //Pasa el requisito y reiniciamos la variable click, mientras que esté en este método, no se puede
-    //hacer click
     clickFlag = false;
-    //El ángulo aumenta 0.05 
     angle += 0.05f;
     if (angle >= targetAngle) {
         angle = targetAngle;
         rotationFlag = false;
         clickFlag = true;
     }
-    //Giro de modo 3D
     if (modelviewFlag) {
         x_ojo = 3.0f + 4.5f * cos(angle);
         z_ojo = 3.5f + 4.5f * sin(angle);
     }
-    //Giro en modo 2D
     else {
         x_ojo = 3.0f + 0.1f * cos(angle);
         z_ojo = 3.499f + 0.1f * sin(angle);
     }
 }
-//Método que dice hasta donde rota
 void Mundo::cambiarOjo() {
     if (modelviewFlag) {
         if (!turnFlag) {
@@ -80,26 +68,22 @@ void Mundo::cambiarOjo() {
 }
 void Mundo::modoVSmaquina() {
     autopilotFlag = !autopilotFlag;
-    std::cout << (autopilotFlag ? "Humano VS Maquina (Seleccionado)\n" : "Humano VS Humano (Seleccionado)\n");
+    //std::cout << (autopilotFlag ? "Humano VS Maquina (Seleccionado)\n" : "Humano VS Humano (Seleccionado)\n");
 }
-//Define la partida
 void Mundo::inicializa() {
+    std::system("cls");
     x_ojo = 3.0f;
     y_ojo = 4.9f;
     z_ojo = -1.0f;
     angle = -1.5707963268f;
-    turnFlag = false;
-    clickFlag = true;
-    rotationFlag = false;
+    turnFlag = rotationFlag = endFlag = false;
+    clickFlag = openingFlag = blackCastlingF = whiteCastlingF = true;
     piezas.deseleccionar();
     platform.resetTileColors();
     piezas.setMode(modeFlag);
-    endFlag = false;
-    openingFlag = true;
     cambiarOjo();
 }
 void Mundo::dibuja() {
-    //CurrentScreen pertenece a pantalla y se inicializa con START al principio de este código
     switch (currentScreen) {
     case START:
         menu.setScreen(MENU_INICIO);
@@ -109,7 +93,6 @@ void Mundo::dibuja() {
         gluLookAt(x_ojo, y_ojo, z_ojo,  // POSICION DEL OJO
                   3.0f, -1.0f, 3.5f,    // DONDE MIRA EL OJO
                   0.0f, 1.0f, 0.0f);    // VECTOR HACIA ARRIBA (+Y)
-   
         glPushMatrix();
         glTranslatef(3.0f, 0.2f, 3.5f);
         glColor4ub(255, 255, 255, 255);
@@ -118,7 +101,7 @@ void Mundo::dibuja() {
         glPopMatrix();
 
         platform.dibuja();
-        piezas.dibuja();
+        piezas.dibujarTablero();
         break;
     case GAME_OVER:
         menu.setScreen(MENU_FINAL);
@@ -130,15 +113,12 @@ void Mundo::dibuja() {
 }
 void Mundo::tecla(unsigned char key) {
     switch (currentScreen) {
-        //En el caso de que sea START(la variable currentScreen)
     case START:
-        if (key == 13) {  // El enter del teclado es el número 13
-            //Si le da a enter pasa al modo y pantalla "PLAYING"
+        if (key == 13) {  // ENTER
             currentScreen = PLAYING;
             glutPostRedisplay();
             return;
         }
-        //Si se pulsa f, se activa el modo pantalla completa, si no se ajusta la pantalla a la pequeña
         else if (key == 'f' || key == 'F') {
             if (fullscrnFlag == 0) {
                 glutFullScreen();
@@ -155,7 +135,7 @@ void Mundo::tecla(unsigned char key) {
         if (!rotationFlag) {
             switch (key) {
             case 'f': case 'F':
-                if (fullscrnFlag == 0) {
+                if (fullscrnFlag==0){
                     glutFullScreen();
                 }
                 else {
@@ -164,19 +144,17 @@ void Mundo::tecla(unsigned char key) {
                 }
                 fullscrnFlag = !fullscrnFlag;
                 break;
-                //Si toca la letra T, el model flag cambia a false, indicando que está en el modo que se cambia y 
-                //Se llama a inicializa para que se cambie
-                    //Todas las tecla siguen el mismo "modus operandi"
             case 't': case 'T':
                 modeFlag = !modeFlag;
                 inicializa();
                 break;
             case 'g': case 'G':
-                piezas.guardarTablero("lastboard.txt", turnFlag, openingFlag);
+                piezas.guardarTablero("lastboard.txt", turnFlag);
                 break;
             case 'c': case 'C':
                 inicializa();
-                piezas.cargarTablero("lastboard.txt", turnFlag, openingFlag);
+                piezas.cargarTablero("lastboard.txt", turnFlag);
+                openingFlag = false;
                 if (turnFlag) {
                     rotationFlag = true;
                     targetAngle = angle + 3.14159265f;
@@ -197,15 +175,14 @@ void Mundo::tecla(unsigned char key) {
             }
         }
         break;
-        //Igua que los anteriores
     case GAME_OVER:
-        if (key == 'r' || key == 'R') {
+        if (key == 13) { // ENTER
             currentScreen = START;
             inicializa();
             glutPostRedisplay();
             return;
         }
-        if (key == 27) {
+        if (key == 27) { // ESC
             exit(0);
         }
         break;
@@ -214,142 +191,133 @@ void Mundo::tecla(unsigned char key) {
     }
     glutPostRedisplay();
 }
-void Mundo::leftClick(int mouseX, int mouseY) {
-    //Definiciones de la librería GLU
-     //Vectores intrínsecos en la librería
-     //Hacen la conversión de coordenadas en 2D a 3D
-    GLint viewport[4];               // X, Y, ANCHO, ALTURA DE LA PANTALLA
-    GLdouble modelview[16];          // 4x4 CAMARA + MODELO DE VISTA
-    GLdouble projection[16];         // 4x4 MATRIZ DE PROYECCION
-    GLfloat depthZ;                  // PROFUNDIDAD DEL CLICK EN 3D
-    GLdouble worldX, worldY, worldZ; // COORDENADAS 3D DEL MUNDO EN PANTALLA
+void Mundo::leftClick(int mouse_x, int mouse_y) {
+    GLint viewport[4];                  // X, Y, ANCHO, ALTURA DE LA PANTALLA
+    GLdouble modelview[16];             // 4x4 CAMARA + MODELO DE VISTA
+    GLdouble projection[16];            // 4x4 MATRIZ DE PROYECCION
+    GLfloat depth_z = 0;                // PROFUNDIDAD DEL CLICK EN 3D
+    GLdouble world_x, world_y, world_z; // COORDENADAS 3D DEL MUNDO EN PANTALLA
 
     glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
     glGetDoublev(GL_PROJECTION_MATRIX, projection);
     glGetIntegerv(GL_VIEWPORT, viewport);
 
     // CONVERSION COORDENADAS DE PANTALLA (X,Y,Z) A TABLERO (X,Z) 
-    //Lo que queremos conseguir en esta slíneas es convertir un click en la pantalla del usuario(en 2D), a una
-    //posición en 3D del tablero, basicamente que pulsando la pantalla te diga que posición del tablero 3D fue
-    //seleccionada
-    //openGL empieza en esquina superior izquiera de la pantalla, y el eje Y va hacia abajo, por eso, mouseY
-    //es igual a viewport[3] - mouseY, wiewport[3] es la altura de la pantalla y mouse Y es la posición del ratón
-    //como empieza desde arriba, la posición 200, es en verdad la 600, de abajo arriba
-    //mouse Y y mouse X, son variables locales de la función, en el cpp se hace que mouseY sea igual a la altura de la
-    mouseY = viewport[3] - mouseY;
-    //lee la profundidad, nos dice a qué distancia está el objto bajo el mouse, 1.0 sería "muye lejos" y 0.0 "muy cerca"
-    glReadPixels(mouseX, mouseY, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &depthZ);
-    //Transforma el pincho del mouse en coordenadas reales del sistema
-    gluUnProject(mouseX, mouseY, depthZ,
-        modelview,//Posición orientación de la cámara
-        projection, //proyección 3D
-        viewport, //Dimensiones d ela pantalla
-        &worldX, &worldY, &worldZ); //Coordenadas de las teclas del ratón en el mundo
+    mouse_y = viewport[3] - mouse_y;
+    glReadPixels(mouse_x, mouse_y, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &depth_z);
+    gluUnProject(mouse_x, mouse_y, depth_z,
+        modelview, projection, viewport,
+        &world_x, &world_y, &world_z);
 
-    //convertimos mundo en casillas del tablero
-    //Convierte el click en la casilla del tablero
-    int boardX = static_cast<int>(worldX - 0.5f);
-    int boardZ = static_cast<int>(worldZ - 0.5f);
+    int board_x = static_cast<int>(world_x - 0.5f);
+    int board_z = static_cast<int>(world_z - 0.5f);
 
-    //Verifica si el click está dentro del tablero y si se puede seleccionar
-    if (boardX >= 0 && boardX < 5 && boardZ >= 0 && boardZ < 6 && clickFlag) {
-        piezas.seleccionar(boardX, boardZ, turnFlag, platform);
+    if (board_x >= 0 && board_x < 5 && board_z >= 0 && board_z < 6 && clickFlag) {
+        piezas.seleccionar(board_x, board_z, turnFlag, platform);
+        bool castling = (turnFlag ? blackCastlingF : whiteCastlingF);
+        int pc = piezas.getBoard()[board_x][board_z];
+        if (castling && abs(pc) == 6) Reglas::displayCastling(pc, { static_cast<float>(board_x), static_cast<float>(board_z) }, piezas.getBoard(), platform.getTiles());
     }
 }
-void Mundo::rightClick(int mouseX, int mouseY) {
-    //Igual que antes
+void Mundo::rightClick(int mouse_x, int mouse_y) {
     GLint viewport[4];
     GLdouble modelview[16], projection[16];
-    GLfloat depthZ = 0.0f;
-    GLdouble worldX, worldY, worldZ;
+    GLfloat depth_z = 0.0f;
+    GLdouble world_x, world_y, world_z;
 
-    //Igual que antes
     glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
     glGetDoublev(GL_PROJECTION_MATRIX, projection);
     glGetIntegerv(GL_VIEWPORT, viewport);
 
-    //Lo mismo que antes
-    mouseY = viewport[3] - mouseY;
-    glReadPixels(mouseX, mouseY, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &depthZ);
-    gluUnProject(mouseX, mouseY, depthZ,
+    mouse_y = viewport[3] - mouse_y;
+    glReadPixels(mouse_x, mouse_y, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &depth_z);
+    gluUnProject(mouse_x, mouse_y, depth_z,
         modelview, projection, viewport,
-        &worldX, &worldY, &worldZ);
+        &world_x, &world_y, &world_z);
 
-    int boardX = static_cast<int>(worldX - 0.5f);
-    int boardZ = static_cast<int>(worldZ - 0.5f);
+    int board_x = static_cast<int>(world_x - 0.5f);
+    int board_z = static_cast<int>(world_z - 0.5f);
 
-    //Convierten el click a casillas del tablero
-    vector2D destino = { static_cast<float>(boardX), static_cast<float>(boardZ) };
-    //Verifica si el click está dentro del tablero y si se puede mover
-    //Destino está en reglas.h
+    vector2D destino = { static_cast<float>(board_x), static_cast<float>(board_z) };
     if (destino.x >= 0 && destino.x < 5 && destino.z >= 0 && destino.z < 6) {
-        //devuelve la selección de la pieza, con el método getSeleccion
         vector2D seleccion = piezas.getSeleccion();
-        //Si la selección no es -1, significa que hay una pieza seleccionada
         if (seleccion.x != -1 && seleccion.z != -1) {
-            //selección las he definido en piezas.seleccionar, estás selccionando las casillas que quieres mover,
-            //las ponemos en 0 y definimos otra coordenadas de destino, borra la pieza de donde está y las imprime en
-            //la de destino cumpliendo las reglas y estando dentro del tablero
-            int piece = piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)];
-            if ((turnFlag == 0 && piece > 0) || (turnFlag == 1 && piece < 0)) {
-                if ((seleccion.z == destino.z && seleccion.x == destino.x) ||
-                    !Reglas::moveChecker(piece, seleccion, destino, piezas.getBoard()))
-                    return;
-                //El destino
-                piezas.getBoard()[static_cast<int>(destino.x)][static_cast<int>(destino.z)] = piece;
-                piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)] = 0;
-                imprimirMov(piece, seleccion, destino);
+            int value = piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)];
+            if ((turnFlag == 0 && value > 0) || (turnFlag == 1 && value < 0)) {
 
-                //Deja de seleccionar una pieza y se seleccionan los cuadrados amarillos
+                if (seleccion.z == destino.z && seleccion.x == destino.x)
+                    return;
+                else if (((turnFlag && blackCastlingF) || (!turnFlag && whiteCastlingF)) && Reglas::enroqueChecker(turnFlag, seleccion, destino, piezas.getBoard())) {
+                    Reglas::enroqueMove(turnFlag, seleccion, destino, piezas.getBoard());
+                    if (turnFlag)
+                        blackCastlingF = false;
+                    else
+                        whiteCastlingF = false;
+                }
+                else if (!Reglas::moveChecker(value, seleccion, destino, piezas.getBoard()))
+                    return;
+                
+                // ACTUALIZAMOS E IMPRIMIMOS EL MOVIMIENTO
+                Reglas::updateMov(value, seleccion, destino, piezas.getBoard());
+
                 piezas.deseleccionar();
                 platform.resetTileColors();
+                if (!autopilotFlag && turnFlag) {
+                    openingFlag = false;
+                }
                 turnFlag = !turnFlag;
                 rotationFlag = true;
-                //hay un nuevo target angles para que despues de cambiar la pieza se inicia el bucle
                 targetAngle = angle + 3.14159265f;
 
-               
                 if (Reglas::jaque(turnFlag, piezas.getBoard(), platform.getTiles())) {
                     endFlag = true;
                     targetAngle = angle;
                     rotationFlag = false;
-                }
-                else if (Reglas::jaqueMate(!turnFlag, piezas.getBoard(), platform.getTiles())) {
-                    endFlag = true;
-                    turnFlag = !turnFlag;
-                }
+                    //std::cout << "JaqueMate!\n";
+				}
+				else if (Reglas::jaqueMate(!turnFlag, piezas.getBoard(), platform.getTiles())) {
+					endFlag = true;
+					turnFlag = !turnFlag;
+                    //std::cout << "JaqueMate!\n";
+				}
                 else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                     jaqueFlag = true;
-                    std::cout << "Jaque!\n";
+                    //std::cout << "Jaque!\n";
                 }
                 else {
                     jaqueFlag = false;
                 }
-                //Control de la máquina, es el versus máquina
-                //Es como: En caso de que estés en vs máquina
                 if (endFlag == 0 && autopilotFlag && turnFlag) {
                     if (openingFlag) {
                         computer.makeMoveOpening(openingFlag, turnFlag, autopilotFlag, piezas.getBoard());
                         openingFlag = false;
+                        platform.resetTileColors();
+                        //std::cout << "makeMoveOpening\n";
                     }
                     else if (jaqueFlag) {
                         endFlag = !computer.makeMoveKingSafe(turnFlag, autopilotFlag, piezas.getBoard());
+                        platform.resetTileColors();
+                        //std::cout << "makeMoveSafeKing\n";
                     }
-                    else {
+                    else if (!jaqueFlag) {
                         endFlag = !computer.makeMove(turnFlag, autopilotFlag, piezas.getBoard());
+                        platform.resetTileColors();
+                        //std::cout << "makeMove\n";
                     }
                     turnFlag = !turnFlag;
                     targetAngle = angle;
                     rotationFlag = false;
                     if (Reglas::jaque(turnFlag, piezas.getBoard(), platform.getTiles())) {
                         endFlag = true;
+                        //std::cout << "JaqueMate!\n";
                     }
                     else if (Reglas::jaqueMate(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                         endFlag = true;
                         turnFlag = !turnFlag;
+                        //std::cout << "JaqueMate!\n";
                     }
                     else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
-                        std::cout << "Jaque!\n";
+                        //std::cout << "Jaque!\n";
                     }
                 }
             }
@@ -357,34 +325,13 @@ void Mundo::rightClick(int mouseX, int mouseY) {
     }
     glutPostRedisplay();
     // COMPROBACION FIN DEL JUEGO.
-    //Se comprueba si el juego ha terminado, y te sale un mensaje de cómo ha termiando la partida
     if (endFlag) {
         std::string winner = (turnFlag == 0) ? "BLANCO" : "NEGRO";
-        std::cout << "Jaque Mate!\n";
-        std::cout << "Ganador: " << winner << std::endl;
+        //std::cout << "Jaque Mate!\n";
+        //std::cout << "Ganador: " << winner << std::endl;
         menu.setWinner(winner);
-        menu.setScores();
+		menu.setScores();
         currentScreen = GAME_OVER;
         return;
     }
-}
-//Te sale en pantalla lo que vas haciendo para que se registre
-//Es un psudocódigo para saber donde están las cosas de forma escrita
-void Mundo::imprimirMov(int piece, vector2D origen, vector2D destino) const {
-    char turno = (turnFlag == 0) ? 'w' : 'b';
-    char abrev = '?';
-    switch (abs(piece)) {
-    case 1: abrev = 'P'; break; // Peón
-    case 2: abrev = 'R'; break; // Torre
-    case 3: abrev = 'H'; break; // Caballo
-    case 4: abrev = 'B'; break; // Alfil
-    case 5: abrev = 'Q'; break; // Reina
-    case 6: abrev = 'K'; break; // Rey
-    default: break;
-    }
-    char col_orig = 'e' - static_cast<int>(origen.x);
-    int row_orig = static_cast<int>(origen.z) + 1;
-    char col_dest = 'e' - static_cast<int>(destino.x);
-    int row_dest = static_cast<int>(destino.z) + 1;
-    std::cout << turno << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
 }

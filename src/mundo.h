@@ -1,4 +1,4 @@
-#include "tablero.h"
+#include "plataforma.h"
 #include "pieza.h"  
 #include "menu.h"
 #include "computador.h" 
@@ -12,13 +12,14 @@ enum Pantalla {
 class Mundo
 {
 public:
-    Tablero platform;   
+    Plataforma platform;   
     Pieza piezas;       
     Menu menu;          
     Computador computer;
 
     float x_ojo, y_ojo, z_ojo, angle, targetAngle;
-    bool modeFlag, turnFlag, clickFlag, rotationFlag, endFlag, modelviewFlag, fullscrnFlag, autopilotFlag, jaqueFlag, openingFlag;
+    bool clickFlag, rotationFlag, fullscrnFlag, modelviewFlag, autopilotFlag,
+         modeFlag, turnFlag, openingFlag, endFlag, jaqueFlag, blackCastlingF, whiteCastlingF;
 
     Mundo();
 
@@ -28,7 +29,7 @@ public:
     void modoVSmaquina();
     void dibuja();
     void tecla(unsigned char key);
+
     void leftClick(int mouseX, int mouseY);
     void rightClick(int mouseX, int mouseY);
-    void imprimirMov(int piece, vector2D origen, vector2D destino) const;
 };

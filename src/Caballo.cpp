@@ -10,7 +10,7 @@ bool Caballo::mueve() {
     return true;
 }
 
-void Caballo::dibujaIndividual() const {
+void Caballo::dibuja() const {
     glPushMatrix();
     glTranslatef(posicion.x, 0.4f, posicion.z);
     glColor4ub(color.r, color.g, color.b, color.a);
@@ -30,12 +30,10 @@ void Caballo::dibujaIndividual() const {
     glRotatef(-90, -1, 0, 0);
     glRotatef(90, 0, 1, 0);
     glTranslatef(0.0f, 0.0f, -size * 0.04f);
-
     if ((color.r == black.r) && (color.g == black.g) && (color.b == black.b)) {
         glTranslatef(0.0f, 0.0f, size * 0.08f);
         glRotatef(180, 0, -1, 0);
     }
-
     glutSolidTorus(size * 0.08f, size * 0.056f, 4, 4);
     glutSolidTorus(size * 0.048f, size * 0.12f, 6, 6);
     gluDisk(quad, 0.0f, size * 0.16f, 8, 1);

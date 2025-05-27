@@ -1,22 +1,16 @@
 #include "reina.h"
 #include "freeglut.h"
 
-// Declaración del constructor
 Reina::Reina() {
     size = 1.0f;
 }
-
-// Declaración del destructor
 Reina::~Reina() {}
 
-
-// Declaración de la función que mueve la reina
 bool Reina::mueve() {
     return true;
 }
 
-// Declaración de la función que dibuja la reina a partir de freeglut
-void Reina::dibujaIndividual() const {
+void Reina::dibuja() const {
     glPushMatrix();
     glTranslatef(posicion.x, 0.4f, posicion.z);
     glColor4ub(color.r, color.g, color.b, color.a);
@@ -40,7 +34,6 @@ void Reina::dibujaIndividual() const {
     glutSolidCone(size * 0.048f, size * 0.08f, 8, 8);
     glTranslatef(0.0f, 0.0f, size * 0.08f);
     glutSolidSphere(size * 0.028f, 6, 6);
-
     if ((color.r == black.r) && (color.g == black.g) && (color.b == black.b)) {
         glTranslatef(0, 0, -size * 0.14f);
         glRotatef(45, 0, 1, 0);
@@ -52,7 +45,6 @@ void Reina::dibujaIndividual() const {
         glRotatef(90, 0, -1, 0);
         glutSolidCone(size * 0.12f, size * 0.22f, 4, 4);
     }
-
     else {
         glTranslatef(0, 0, size * 0.08f);
         glutSolidTorus(size * 0.016f, size * 0.088f, 10, 10);
@@ -72,6 +64,5 @@ void Reina::dibujaIndividual() const {
         glTranslatef(size * -0.0525f, 0, 0);
         glutSolidCone(size * 0.0875f, size * 0.21f, 4, 4);
     }
-
     glPopMatrix();
 }

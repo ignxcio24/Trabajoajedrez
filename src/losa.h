@@ -13,7 +13,7 @@ public:
 	Losa();
 	virtual~Losa();
 
-	void setColor(const Color& c);//elige color de la losa 
-	void setPosicion(float ix, float iz);//coloca la losa del tablero
-	void dibuja() const; //dibuja la losa
+	inline void setColor(const Color& c) { color = c; }
+	inline void setPosicion(float ix, float iz) { posicion = { ix, iz }; }
+	void dibuja() const;
 };

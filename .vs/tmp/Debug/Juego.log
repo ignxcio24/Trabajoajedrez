@@ -1,23 +1,2 @@
-﻿  alfil.cpp
-  caballo.cpp
-  color.cpp
-  computador.cpp
-C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\src\computador.cpp(19,25): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  losa.cpp
-  menu.cpp
-  mundo.cpp
-  juego.cpp
-  peon.cpp
-  pieza.cpp
-  reina.cpp
-  rey.cpp
-  reglas.cpp
-  plataforma.cpp
-C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\src\plataforma.cpp(13,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\src\plataforma.cpp(13,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-  torre.cpp
-C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\src\torre.cpp(40,80): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\src\torre.cpp(40,40): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-  vector2D.cpp
-  Generando código...
+﻿  reglas.cpp
   Juego.vcxproj -> C:\Users\prestamo_admin\Desktop\UPM\UPM - Asignaturas\UPM - S6\6 - Informática Ind\Trabajoajedrez\bin\Juego.exe

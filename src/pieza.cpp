@@ -12,6 +12,8 @@
 
 #include "reglas.h"
 
+#include "ETSIDI.h"
+
 GLUquadric* getSharedQuadric() {
     static GLUquadric* sharedQuad = gluNewQuadric();
     return sharedQuad;
@@ -67,6 +69,7 @@ void Pieza::seleccionar(int ix, int iz, int turnFlag, Plataforma& platform) {
         return;
     if ((turnFlag == 0 && pc < 0) || (turnFlag == 1 && pc > 0))
         return;
+    ETSIDI::play("sonidos/seleccion.mp3");
     seleccion = vector2D(static_cast<float>(ix), static_cast<float>(iz));
     platform.resetTileColors();
     Reglas::displayValidMoves(pc, seleccion, board, platform.getTiles());
@@ -137,13 +140,16 @@ void Pieza::dibujarTablero() const {
             int value = board[i][j];
             if (value == 0)
                 continue;
-            // Coronazion del peon
+
+            // CORONACION DEL PEON
             if (value == 1 && j == 5) {
-				value = 5; // Reina
+                ETSIDI::play("sonidos/coronacion.mp3");
+                value = 5; // Peon a Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[i][j] = value;
 			}
 			else if (value == -1 && j == 0) {
-				value = -5; // Reina
+                ETSIDI::play("sonidos/coronacion.mp3");
+				value = -5; // Peon a Reina
                 const_cast<std::array<std::array<int, 6>, 5>&>(board)[i][j] = value;
             }
             Pieza* piece = crear(value);

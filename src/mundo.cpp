@@ -6,6 +6,7 @@
 #include <iostream>
 #include "freeglut.h"
 #include <GL/glu.h>
+#include "ETSIDI.h"
 
 Pantalla currentScreen = START;
 
@@ -282,6 +283,7 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
 				}
                 else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                     jaqueFlag = true;
+                    ETSIDI::play("sonidos/jaque.mp3");
                     //std::cout << "Jaque!\n";
                 }
                 else {
@@ -317,6 +319,7 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
                         //std::cout << "JaqueMate!\n";
                     }
                     else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
+                        ETSIDI::play("sonidos/jaque.mp3");
                         //std::cout << "Jaque!\n";
                     }
                 }
@@ -326,7 +329,8 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
     glutPostRedisplay();
     // COMPROBACION FIN DEL JUEGO.
     if (endFlag) {
-        std::string winner = (turnFlag == 0) ? "BLANCO" : "NEGRO";
+        std::string winner = turnFlag ? "NEGRO" : "BLANCO";
+        turnFlag ? ETSIDI::play("sonidos/derrota.mp3") : ETSIDI::play("sonidos/victoria.mp3");
         //std::cout << "Jaque Mate!\n";
         //std::cout << "Ganador: " << winner << std::endl;
         menu.setWinner(winner);

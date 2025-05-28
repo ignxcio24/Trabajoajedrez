@@ -7,6 +7,10 @@
 #include <vector>
 #include "plataforma.h"
 #include "ETSIDI.h"
+//metemos el logger:
+#include "logger.h"
+#include <sstream>  // <-- AÑADIMOS ESTA LÍNEA QUE AYUDA A LOGGER
+
 
 Reglas::Reglas() {};
 
@@ -248,6 +252,11 @@ void Reglas::updateMov(int value, vector2D origen, vector2D destino, std::array<
         char col_dest = 'e' - static_cast<int>(destino.x);
         int row_dest = static_cast<int>(destino.z) + 1;
 
-        std::cout << (value < 0 ? "b" : "w") << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
+        //std::cout << (value < 0 ? "b" : "w") << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
+		// LOG MOVIMIENTO
+        std::ostringstream mov;
+        mov << (value < 0 ? "b" : "w") << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest;
+        logger::info(mov.str().c_str());
+    
     }
 }

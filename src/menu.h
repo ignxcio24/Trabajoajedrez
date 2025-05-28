@@ -21,7 +21,7 @@ public:
     void cargarScores(int& whiteScore, int& blackScore);
     bool vsMaquina = false;
     bool modoPetty = false; 
-    bool mostrarOpciones = false;
+    bool mostrarInstrucciones = false;
 private:
     MenuScreen currentScreen;
     std::vector<std::string> items;

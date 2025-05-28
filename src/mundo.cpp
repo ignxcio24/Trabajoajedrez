@@ -132,10 +132,9 @@ void Mundo::tecla(unsigned char key) {
             fullscrnFlag = !fullscrnFlag;
             return;
         }
-        else if (key == 'o'||key=='O')
-		{
+        else if (key == 'i'||key=='I'){
 			ETSIDI::play("sonidos/carga.mp3");
-			menu.mostrarOpciones = !menu.mostrarOpciones;
+			menu.mostrarInstrucciones = !menu.mostrarInstrucciones;
 			return;
 		}
 		else if (key == 'm' || key == 'M') {

@@ -16,7 +16,7 @@ void Menu::renderText(float y, const std::string& text, bool isTitle) {
     glPushMatrix();
     glTranslatef(-0.6f, y, 0.0f);  // Alineamiento a izquierda
     if (isTitle)
-        glScalef(0.0012f, 0.002f, 0.002f);
+        glScalef(0.0011f, 0.002f, 0.002f);
     else
         glScalef(0.0005f, 0.001f, 0.001f);  // Escalado de texto
     for (char c : text) {
@@ -41,7 +41,7 @@ void Menu::dibuja() {
     float dy = -0.15f;
     int i = 0;
     for (const auto& line : items) {
-        bool isTitle = (i == 0||i==2);
+        bool isTitle = (i == 0 || i == 2);
         renderText(y, line, isTitle);
         y += dy;
         i++;
@@ -54,10 +54,11 @@ void Menu::dibuja() {
 }
 void Menu::menuStart() {
     items.reserve(13);
-    items.push_back("GUERRA SANTA");
-    items.push_back("  ");
-    items.push_back("  AJEDREZ");
-	if (vsMaquina)
+    items.push_back("AJEDREZ");
+    items.push_back(" ");
+    items.push_back("GUERRA-SANTA");
+    items.push_back(" ");
+    if (vsMaquina)
 		items.push_back("Modo: VS Maquina");
 	else
 		items.push_back("Modo: VS Jugador");
@@ -65,15 +66,14 @@ void Menu::menuStart() {
         items.push_back("Modo: Petty");
     else
         items.push_back("Modo: Esquinas opuestas");
+    items.push_back("i: instrucciones");
 
-    items.push_back("O: opciones");
-
-    if (mostrarOpciones) {
+    if (mostrarInstrucciones) {
         items.push_back("Click izq | dcho : seleccionar | mover");
-        items.push_back("  - G : guardar tablero actual");
-        items.push_back("  - C : cargar ultimo tablero");
-        items.push_back("  - V : vista 2D o 3D");
-        items.push_back("  - T : cambiar modo tablero");
+        items.push_back(" - G : guardar tablero actual");
+        items.push_back(" - C : cargar ultimo tablero");
+        items.push_back(" - V : vista 2D o 3D");
+        items.push_back(" - T : cambiar modo tablero");
     }
     else
     items.push_back("ENTER para comenzar");

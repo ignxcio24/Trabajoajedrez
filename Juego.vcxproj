@@ -23,6 +23,7 @@
     <ClCompile Include="src\caballo.cpp" />
     <ClCompile Include="src\color.cpp" />
     <ClCompile Include="src\computador.cpp" />
+    <ClCompile Include="src\logger.cpp" />
     <ClCompile Include="src\losa.cpp" />
     <ClCompile Include="src\menu.cpp" />
     <ClCompile Include="src\mundo.cpp" />
@@ -42,6 +43,7 @@
     <ClInclude Include="src\caballo.h" />
     <ClInclude Include="src\color.h" />
     <ClInclude Include="src\computador.h" />
+    <ClInclude Include="src\logger.h" />
     <ClInclude Include="src\losa.h" />
     <ClInclude Include="src\menu.h" />
     <ClInclude Include="src\mundo.h" />

@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "src\\plataforma.cpp",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\plataforma.cpp",
               "RelativeToolTip": "src\\plataforma.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-28T07:13:18.043Z",
               "EditorCaption": ""
@@ -80,8 +80,7 @@
               "RelativeToolTip": "src\\alfil.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T07:00:40.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T07:00:40.265Z"
             },
             {
               "$type": "Document",
@@ -141,8 +140,7 @@
               "RelativeToolTip": "src\\pieza.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-28T06:49:13.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T06:49:13.983Z"
             }
           ]
         }

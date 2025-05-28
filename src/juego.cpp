@@ -1,5 +1,8 @@
 #include "mundo.h"
 #include "freeglut.h"
+//Metemos logger para guardar movimientos:
+#include "logger.h"
+
 
 Mundo world;
 
@@ -11,6 +14,8 @@ void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecl
 void OnMouseClick(int button, int state, int x, int y);
 
 int main(int argc, char* argv[]){
+	//Inicializar el logger
+	logger::init();
 	//Inicializar el gestor de ventanas GLUT y crear la ventana
 	glutInit(&argc, argv);
 	glutInitWindowSize(1408, 792);
@@ -42,6 +47,8 @@ int main(int argc, char* argv[]){
 
 	//Pasar el control a GLUT para que llame a los callbacks
 	glutMainLoop();
+	// Cerrar el logger al finalizar
+	logger::shutdown();
 	return 0;
 }
 void OnDraw(void){

@@ -37,7 +37,7 @@ void Menu::dibuja() {
     glDisable(GL_DEPTH_TEST);
     glColor3f(1.0f, 1.0f, 1.0f);
 
-    float y = 0.45f;
+    float y = 0.6f;
     float dy = -0.15f;
     int i = 0;
     for (const auto& line : items) {
@@ -53,30 +53,35 @@ void Menu::dibuja() {
     glMatrixMode(GL_MODELVIEW);
 }
 void Menu::menuStart() {
-    items.reserve(13);
-    items.push_back("AJEDREZ");
+    items.reserve(17);
+    
+    items.push_back("  AJEDREZ");
     items.push_back(" ");
     items.push_back("GUERRA-SANTA");
     items.push_back(" ");
+    if (!mostrarInstrucciones) {
     if (vsMaquina)
-		items.push_back("Modo: VS Maquina");
-	else
-		items.push_back("Modo: VS Jugador");
+        items.push_back("   Modo: VS Maquina");
+    else
+        items.push_back("   Modo: VS Jugador");
     if (modoPetty)
-        items.push_back("Modo: Petty");
+        items.push_back("   Modo: Petty (T)");
     else
-        items.push_back("Modo: Esquinas opuestas");
-    items.push_back("i: instrucciones");
-
-    if (mostrarInstrucciones) {
-        items.push_back("Click izq | dcho : seleccionar | mover");
-        items.push_back(" - G : guardar tablero actual");
-        items.push_back(" - C : cargar ultimo tablero");
-        items.push_back(" - V : vista 2D o 3D");
-        items.push_back(" - T : cambiar modo tablero");
+        items.push_back("   Modo: Esquinas opuestas");
+    items.push_back("   i: Instrucciones");
+    items.push_back("   ENTER para comenzar");
     }
-    else
-    items.push_back("ENTER para comenzar");
+    else {
+        items.push_back("Click izq | dcho : seleccionar | mover");
+        items.push_back("  - G : Guardar tablero actual");
+        items.push_back("  - C : Cargar ultimo tablero");
+        items.push_back("  - V : Vista 2D o 3D");
+        items.push_back("  - T : Cambiar modo tablero");
+        items.push_back("  - M : Cambiar modo de juego");
+        items.push_back("        i: VOLVER ");
+    }
+    
+    
 }
 void Menu::setWinner(const std::string& winner) {
     winnerText = winner;
@@ -111,12 +116,16 @@ void Menu::setScores() {
 }
 void Menu::menuGameOver() {
     items.clear();
-    items.reserve(7);
+    items.reserve(9);
     items.push_back("FIN DEL JUEGO");
-    items.push_back("GANADOR: " + winnerText);
+    //items.push_back("  GAME OVER ");
     items.push_back(" ");
-    items.push_back("BLANCO " + std::to_string(whiteScore) + " : " + std::to_string(blackScore) + " NEGRO");
+    items.push_back("GANADOR-" + winnerText);
+    //items.push_back(" WINNER-" + winnerText);
     items.push_back(" ");
-    items.push_back("ENTER para jugar de nuevo");
-    items.push_back("ESC para salir");
+    items.push_back("    BLANCO " + std::to_string(whiteScore) + " : " + std::to_string(blackScore) + " NEGRO");
+    items.push_back(" ");
+    items.push_back("   ENTER para jugar de nuevo");
+    items.push_back(" ");
+    items.push_back("       ESC para salir");
 }

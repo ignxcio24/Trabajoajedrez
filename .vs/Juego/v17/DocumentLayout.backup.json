@@ -13,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "pieza.cpp",
-              "DocumentMoniker": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\pieza.cpp",
-              "RelativeDocumentMoniker": "src\\pieza.cpp",
-              "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\pieza.cpp",
-              "RelativeToolTip": "src\\pieza.cpp",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAAAKcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "reglas.cpp",
+              "DocumentMoniker": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\reglas.cpp",
+              "RelativeDocumentMoniker": "src\\reglas.cpp",
+              "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\reglas.cpp*",
+              "RelativeToolTip": "src\\reglas.cpp*",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAANoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T18:51:10.507Z",
+              "WhenOpened": "2025-05-28T02:53:56.256Z",
               "EditorCaption": ""
             },
             {
@@ -61,34 +57,22 @@
               "RelativeDocumentMoniker": "src\\mundo.cpp",
               "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\mundo.cpp",
               "RelativeToolTip": "src\\mundo.cpp",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAnwPsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAAKoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T18:40:21.439Z",
+              "WhenOpened": "2025-05-28T02:53:38.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "computador.cpp",
-              "DocumentMoniker": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\computador.cpp",
-              "RelativeDocumentMoniker": "src\\computador.cpp",
-              "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\computador.cpp",
-              "RelativeToolTip": "src\\computador.cpp",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAnwNcAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "pieza.cpp",
+              "DocumentMoniker": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\pieza.cpp",
+              "RelativeDocumentMoniker": "src\\pieza.cpp",
+              "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\pieza.cpp*",
+              "RelativeToolTip": "src\\pieza.cpp*",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T18:27:20.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "reglas.cpp",
-              "DocumentMoniker": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\reglas.cpp",
-              "RelativeDocumentMoniker": "src\\reglas.cpp",
-              "ToolTip": "C:\\Users\\prestamo_admin\\Desktop\\UPM\\UPM - Asignaturas\\UPM - S6\\6 - Inform\u00E1tica Ind\\Trabajoajedrez\\src\\reglas.cpp*",
-              "RelativeToolTip": "src\\reglas.cpp*",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAYwOYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T18:17:52.083Z",
+              "WhenOpened": "2025-05-28T02:53:09.808Z",
               "EditorCaption": ""
             }
           ]

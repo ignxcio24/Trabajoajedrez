@@ -37,8 +37,8 @@ void Mundo::rotarOjo() {
         z_ojo = 3.5f + 4.5f * sin(angle);
     }
     else {
-        x_ojo = 3.0f + 0.1f * cos(angle);
-        z_ojo = 3.499f + 0.1f * sin(angle);
+        x_ojo = 3.0f + 0.001f * cos(angle);
+        z_ojo = 3.5f + 0.001f * sin(angle);
     }
 }
 void Mundo::cambiarOjo() {
@@ -57,13 +57,13 @@ void Mundo::cambiarOjo() {
     else {
         if (!turnFlag) {
             x_ojo = 3.0f;
-            y_ojo = 6.45f;
-            z_ojo = 3.499f;
+            y_ojo = 10.22f;
+            z_ojo = 3.499999f;
         }
         else {
             x_ojo = 3.0f;
-            y_ojo = 6.45f;
-            z_ojo = 3.501f;
+            y_ojo = 10.22f;
+            z_ojo = 3.500001f;
         }
     }
 }
@@ -98,7 +98,7 @@ void Mundo::dibuja() {
         glTranslatef(3.0f, 0.2f, 3.5f);
         glColor4ub(255, 255, 255, 255);
         glRotatef(90, 0, -1, 0);
-        glutWireSphere(10, 20, 17);
+        glutWireSphere(12, 20, 17);
         glPopMatrix();
 
         platform.dibuja();
@@ -116,6 +116,7 @@ void Mundo::tecla(unsigned char key) {
     switch (currentScreen) {
     case START:
         if (key == 13) {  // ENTER
+            ETSIDI::play("sonidos/carga.mp3");
             currentScreen = PLAYING;
             glutPostRedisplay();
             return;
@@ -146,6 +147,7 @@ void Mundo::tecla(unsigned char key) {
                 fullscrnFlag = !fullscrnFlag;
                 break;
             case 't': case 'T':
+                ETSIDI::play("sonidos/carga.mp3");
                 modeFlag = !modeFlag;
                 inicializa();
                 break;
@@ -166,6 +168,7 @@ void Mundo::tecla(unsigned char key) {
                 cambiarOjo();
                 break;
             case 'm': case 'M':
+                ETSIDI::play("sonidos/versus.mp3");
                 modoVSmaquina();
                 break;
             case 27:

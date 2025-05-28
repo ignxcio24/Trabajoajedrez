@@ -118,6 +118,7 @@ void Pieza::guardarTablero(const std::string& filename, bool turnFlag) {
         file << '\n';
     }
     file << turnFlag << '\n';
+    ETSIDI::play("sonidos/guardar.mp3");
     //std::cout << "Ultimo tablero guardado exitosamente.\n";
 }
 void Pieza::cargarTablero(const std::string& filename, bool& turnFlag) {
@@ -132,6 +133,7 @@ void Pieza::cargarTablero(const std::string& filename, bool& turnFlag) {
         }
     }
     file >> turnFlag;
+    ETSIDI::play("sonidos/carga.mp3");
    // std::cout << "Ultimo tablero guardado cargado exitosamente\n";
 }
 void Pieza::dibujarTablero() const {
@@ -141,17 +143,6 @@ void Pieza::dibujarTablero() const {
             if (value == 0)
                 continue;
 
-            // CORONACION DEL PEON
-            if (value == 1 && j == 5) {
-                ETSIDI::play("sonidos/coronacion.mp3");
-                value = 5; // Peon a Reina
-                const_cast<std::array<std::array<int, 6>, 5>&>(board)[i][j] = value;
-			}
-			else if (value == -1 && j == 0) {
-                ETSIDI::play("sonidos/coronacion.mp3");
-				value = -5; // Peon a Reina
-                const_cast<std::array<std::array<int, 6>, 5>&>(board)[i][j] = value;
-            }
             Pieza* piece = crear(value);
             if (!piece)
                 continue;

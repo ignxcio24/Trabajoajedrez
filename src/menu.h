@@ -28,7 +28,7 @@ private:
     std::string winnerText;
     int whiteScore, blackScore;
 
-    void renderText(float y, const std::string& text, bool isTitle);
+    void renderText(float y, const std::string& text, bool titleStyle);
     void menuStart();
     void menuGameOver();
 };

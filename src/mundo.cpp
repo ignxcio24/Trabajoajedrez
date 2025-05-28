@@ -147,8 +147,10 @@ void Mundo::tecla(unsigned char key) {
 			exit(0);
 		}
 		else if (key == 't' || key == 'T') {
+            ETSIDI::play("sonidos/carga.mp3");
 			menu.modoPetty = !menu.modoPetty;
-			piezas.setMode(menu.modoPetty);
+            modeFlag = menu.modoPetty;
+			piezas.setMode(modeFlag);
 			return;
 		}
         break;
@@ -190,12 +192,10 @@ void Mundo::tecla(unsigned char key) {
                 ETSIDI::play("sonidos/versus.mp3");
                 modoVSmaquina();
                 break;
-            case 27: //ESC
-            { 
+            case 'p': case 'P':  
                 currentScreen = START;
                 glutPostRedisplay();
                 break;
-            }
             default:
                 break;
             }

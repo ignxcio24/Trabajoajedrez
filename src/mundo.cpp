@@ -10,6 +10,7 @@
 
 Pantalla currentScreen = START;
 
+// Constructor del mundo: inicializa cámara y todos los flags
 Mundo::Mundo() :
     // CAMARA
     x_ojo(3.0f), y_ojo(4.9f), z_ojo(-1.0f),
@@ -22,16 +23,19 @@ Mundo::Mundo() :
     // ONE-TIME-USE FLAGS (POR PARTIDA) 
     openingFlag(true), endFlag(false), blackCastlingF(true), whiteCastlingF(true)
 {}
+
+// Rotación de cámara si rotationFlag está activo
 void Mundo::rotarOjo() {
     if (!rotationFlag)
         return;
-    clickFlag = false;
+    clickFlag = false;  // Bloquea clicks durante rotación
     angle += 0.05f;
     if (angle >= targetAngle) {
         angle = targetAngle;
         rotationFlag = false;
-        clickFlag = true;
+        clickFlag = true; // Vuelve a permitir interacción de clicks
     }
+    // Cámara según modo (cenital o perspectiva)
     if (modelviewFlag) {
         x_ojo = 3.0f + 4.5f * cos(angle);
         z_ojo = 3.5f + 4.5f * sin(angle);
@@ -41,6 +45,7 @@ void Mundo::rotarOjo() {
         z_ojo = 3.5f + 0.001f * sin(angle);
     }
 }
+// Cambia entre modo jugador vs jugador y jugador vs IA
 void Mundo::cambiarOjo() {
     if (modelviewFlag) {
         if (!turnFlag) {
@@ -67,6 +72,7 @@ void Mundo::cambiarOjo() {
         }
     }
 }
+// Cambia entre modo jugador vs jugador y jugador vs IA
 void Mundo::modoVSmaquina() {
     autopilotFlag = !autopilotFlag;
     //std::cout << (autopilotFlag ? "Humano VS Maquina (Seleccionado)\n" : "Humano VS Humano (Seleccionado)\n");

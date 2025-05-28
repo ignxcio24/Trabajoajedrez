@@ -5,52 +5,59 @@
 #include <string>
 
 Menu::Menu(MenuScreen screen) : currentScreen(screen) {
-    setScreen(screen);
+    setScreen(screen); // Asigna y carga el menú activo (inicio o fin)
 }
+
+// Cambia el estado del menú (inicio o game over) y actualiza los elementos visuales
 void Menu::setScreen(MenuScreen screen) {
     currentScreen = screen;
-    items.clear();
+    items.clear(); // Limpia los textos anteriores
     (currentScreen == MENU_INICIO) ? menuStart() : menuGameOver();
 }
+
+// Dibuja una línea de texto en pantalla con posicionamiento y escalado
 void Menu::renderText(float y, const std::string& text, bool titleStyle) {
     glPushMatrix();
-    glTranslatef(-0.6f, y, 0.0f);  // Alineamiento a izquierda
+    glTranslatef(-0.6f, y, 0.0f);   // Alineación a la izquierda del centro
     if (titleStyle)
-        glScalef(0.0011f, 0.002f, 0.002f);
+        glScalef(0.0011f, 0.002f, 0.002f); // Tamaño mayor para títulos
     else
-        glScalef(0.0005f, 0.001f, 0.001f);  // Escalado de texto
+        glScalef(0.0005f, 0.001f, 0.001f);  // Tamaño estándar
     for (char c : text) {
-        glutStrokeCharacter(GLUT_STROKE_ROMAN, c);
+        glutStrokeCharacter(GLUT_STROKE_ROMAN, c); // Dibuja cada carácter
     }
     glPopMatrix();
 }
+
+// Dibuja el menú en pantalla (texto en 2D)
 void Menu::dibuja() {
     glMatrixMode(GL_PROJECTION);
     glPushMatrix();
     glLoadIdentity();
-    gluOrtho2D(-1, 1, -1, 1);
+    gluOrtho2D(-1, 1, -1, 1); // Proyección ortográfica para modo 2D
 
     glMatrixMode(GL_MODELVIEW);
     glPushMatrix();
     glLoadIdentity();
 
-    glDisable(GL_DEPTH_TEST);
-    glColor3f(1.0f, 1.0f, 1.0f);
-
+    glDisable(GL_DEPTH_TEST); // Desactiva profundidad para que el texto se vea sobre todo
+    glColor3f(1.0f, 1.0f, 1.0f); // Texto en blanco
+     
     float y = 0.5f;
-    float dy = -0.15f;
+    float dy = -0.15f;  // Espaciado entre líneas
     int i = 0;
-    for (const auto& line : items) {
-        renderText(y, line, false);
+    for (const auto& line : items) { 
+        renderText(y, line, false); // Dibuja cada línea del menú
         y += dy;
         i++;
     }
-    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_DEPTH_TEST); // Reactiva test de profundidad
     glPopMatrix();
     glMatrixMode(GL_PROJECTION);
     glPopMatrix();
     glMatrixMode(GL_MODELVIEW);
 }
+// Define los textos que aparecerán en el menú de inicio
 void Menu::menuStart() {
     items.clear();
     mostrarInstrucciones
@@ -73,9 +80,11 @@ void Menu::menuStart() {
             items.push_back("ENTER para comenzar"),
             items.push_back("ESC para salir"));
 }
+// Asigna el nombre del jugador ganador para mostrar en el menú final
 void Menu::setWinner(const std::string& winner) {
     winnerText = winner;
 }
+// Guarda las puntuaciones acumuladas en un archivo externo
 void Menu::guardarScores(int whiteScore, int blackScore) {
     std::ofstream out("scores.txt");
     if (out.is_open()) {
@@ -83,6 +92,7 @@ void Menu::guardarScores(int whiteScore, int blackScore) {
         out.close();
     }
 }
+// Carga las puntuaciones desde el archivo. Si no existe, pone a cero ambas
 void Menu::cargarScores(int& whiteScore, int& blackScore) {
     std::ifstream in("scores.txt");
     if (in.is_open()) {
@@ -95,6 +105,7 @@ void Menu::cargarScores(int& whiteScore, int& blackScore) {
         blackScore = 0;
     }
 }
+// Suma la puntuación al jugador ganador y guarda los resultados actualizados
 void Menu::setScores() {
     cargarScores(whiteScore, blackScore);
     if (winnerText == "BLANCO")
@@ -104,6 +115,7 @@ void Menu::setScores() {
     //std::cout << "Blanco " << whiteScore << " : " << blackScore << " Negro" << std::endl;
     guardarScores(whiteScore, blackScore);
 }
+// Define los textos a mostrar cuando se termina la partida
 void Menu::menuGameOver() {
     items.clear();
     items.reserve(7);

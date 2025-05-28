@@ -1,17 +1,17 @@
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\alfil.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\alfil.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\caballo.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\caballo.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\color.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\color.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\computador.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\computador.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\losa.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\losa.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\menu.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\menu.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\mundo.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\mundo.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\juego.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\juego.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\peon.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\peon.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\pieza.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\pieza.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reina.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\reina.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\rey.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\rey.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\reglas.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\reglas.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\plataforma.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\plataforma.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\textura.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\textura.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\torre.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\torre.obj
-C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\src\vector2D.cpp;C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\.vs\tmp\Debug\vector2D.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\alfil.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\alfil.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\caballo.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\caballo.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\color.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\color.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\computador.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\computador.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\losa.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\losa.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\menu.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\menu.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\mundo.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\mundo.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\juego.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\juego.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\peon.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\peon.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\pieza.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reina.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\reina.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\rey.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\rey.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\reglas.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\plataforma.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\plataforma.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\textura.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\textura.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\torre.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\torre.obj
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\vector2D.cpp;C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\.vs\tmp\Debug\vector2D.obj

@@ -78,8 +78,7 @@
               "RelativeToolTip": "src\\pieza.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T08:14:46.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T08:14:46.41Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "src\\vector2D.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T07:18:19.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T07:18:19.098Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "src\\vector2D.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T07:18:34.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T07:18:34.727Z"
             },
             {
               "$type": "Document",
@@ -115,7 +112,7 @@
               "RelativeDocumentMoniker": "src\\replay.cpp",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.cpp",
               "RelativeToolTip": "src\\replay.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T07:46:32.182Z",
               "EditorCaption": ""
@@ -130,8 +127,7 @@
               "RelativeToolTip": "src\\replay.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T06:40:21.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T06:40:21.578Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "src\\reglas.cpp",
               "ViewState": "AgIAAJkAAAAAAAAAAAAAAP0AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T23:49:40.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T23:49:40.124Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "src\\logger.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T23:42:23.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T23:42:23.331Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "src\\logger.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-28T23:32:04.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T23:32:04.635Z"
             },
             {
               "$type": "Document",

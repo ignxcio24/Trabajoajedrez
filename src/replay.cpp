@@ -49,3 +49,16 @@ bool replay::cargar(const string& ruta) {
     return cargado;
 
 }
+
+
+//Devuelve true si quedan movimientos por reproducir:
+bool replay::haySiguiente() const {
+    return cargado && indiceActual < movimientos.size();
+}
+
+//Devuelve el siguiente movimiento y avanza el índice, si ha detectado true en haySiguiente:
+Movimiento replay::siguiente() {
+    if (!haySiguiente()) return Movimiento();
+    return movimientos[indiceActual++];
+}
+

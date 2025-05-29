@@ -251,9 +251,10 @@ void Reglas::updateMov(int value, vector2D origen, vector2D destino, std::array<
         int row_orig = static_cast<int>(origen.z) + 1;
         char col_dest = 'e' - static_cast<int>(destino.x);
         int row_dest = static_cast<int>(destino.z) + 1;
-
+		//Comento esta línea por si tenemos que quitarle el comentario más adelante
         //std::cout << (value < 0 ? "b" : "w") << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
 		// LOG MOVIMIENTO
+
         std::ostringstream mov;
         mov << (value < 0 ? "b" : "w") << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest;
         logger::info(mov.str().c_str());

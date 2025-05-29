@@ -112,7 +112,7 @@
               "RelativeDocumentMoniker": "src\\replay.cpp",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.cpp",
               "RelativeToolTip": "src\\replay.cpp",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T07:46:32.182Z",
               "EditorCaption": ""
@@ -125,9 +125,10 @@
               "RelativeDocumentMoniker": "src\\replay.h",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.h",
               "RelativeToolTip": "src\\replay.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T06:40:21.578Z"
+              "WhenOpened": "2025-05-29T06:40:21.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

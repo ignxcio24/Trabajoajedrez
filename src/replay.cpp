@@ -62,3 +62,15 @@ Movimiento replay::siguiente() {
     return movimientos[indiceActual++];
 }
 
+
+//Reinicio del replay:
+void replay::reiniciar() {
+
+    indiceActual = 0; //Reinicio del índice a 0
+
+}
+
+//Devuelve una referencia a todos los movimientos cargados:
+const std::vector<Movimiento>& replay::getMovimientos() const {
+    return movimientos;
+}

@@ -361,7 +361,7 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
     // COMPROBACION FIN DEL JUEGO.
     if (endFlag) {
         std::string winner = turnFlag ? "NEGRO" : "BLANCO";
-        turnFlag ? ETSIDI::play("sonidos/derrota.mp3") : ETSIDI::play("sonidos/victoria.mp3");
+        turnFlag ? ETSIDI::play("sonidos/derrotademon.mp3") : ETSIDI::play("sonidos/victoriaangel.mp3");
         //std::cout << "Jaque Mate!\n";
         //std::cout << "Ganador: " << winner << std::endl;
         menu.setWinner(winner);

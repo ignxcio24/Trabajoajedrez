@@ -43,11 +43,12 @@ void Menu::dibuja() {
     glDisable(GL_DEPTH_TEST); // Desactiva profundidad para que el texto se vea sobre todo
     glColor3f(1.0f, 1.0f, 1.0f); // Texto en blanco
      
-    float y = 0.5f;
+    float y = 0.45f;
     float dy = -0.15f;  // Espaciado entre líneas
     int i = 0;
     for (const auto& line : items) { 
-        renderText(y, line, false); // Dibuja cada línea del menú
+        bool isTitle = (i == 0 || i == 2);
+        renderText(y, line, isTitle);  // Dibuja cada línea del menú
         y += dy;
         i++;
     }
@@ -59,7 +60,7 @@ void Menu::dibuja() {
 }
 // Define los textos que aparecerán en el menú de inicio
 void Menu::menuStart() {
-<<<<<<< HEAD
+
     items.reserve(13);
     if (!mostrarInstrucciones) {
     items.push_back("  AJEDREZ");
@@ -79,9 +80,9 @@ void Menu::menuStart() {
         items.push_back("    ESC para salir");
     }
     else{
-        items.push_back("  AJEDREZ");
-        items.push_back(" ");
         items.push_back("INSTRUCCIONES");
+        items.push_back(" ");
+        items.push_back(" DEL AJEDREZ ");
         items.push_back("Click izq | dcho : seleccionar | mover");
         items.push_back(" - G : guardar tablero actual");
         items.push_back(" - C : cargar ultimo tablero");
@@ -89,31 +90,9 @@ void Menu::menuStart() {
         items.push_back(" - M : cambiar VS");
         items.push_back(" - T : cambiar modo tablero");
         items.push_back(" - P : pausar");
+        //items.push_back("   ENTER para comenzar");
     }
-   
-        
-=======
-    items.clear();
-    mostrarInstrucciones
-        ? (items.reserve(8), 
-            items.push_back("INSTRUCCIONES:"),
-            items.push_back("Click izq | dcho : seleccionar | mover"),
-            items.push_back("- G : guardar tablero actual"),
-            items.push_back("- C : cargar ultimo tablero"),
-            items.push_back("- V : vista 2D o 3D"), 
-            items.push_back("- M : cambiar VS"),
-            items.push_back("- T : cambiar modo tablero"), 
-            items.push_back("- P : pausar"))
-        : (items.reserve(8), 
-            items.push_back("AJEDREZ"),
-            items.push_back("GUERRA-SANTA"),
-            items.push_back(" "),
-            items.push_back(vsMaquina ? "Jugador VS Maquina" : "Jugador VS Jugador"),
-            items.push_back(modoPetty ? "Modo Petty" : "Modo Esquinas Opuestas"),
-            items.push_back("I : instrucciones"),
-            items.push_back("ENTER para comenzar"),
-            items.push_back("ESC para salir"));
->>>>>>> parent of 500db1d (AÃ‘ADIR INTERACCION TECLA A POR TECLADO)
+  
 }
 // Asigna el nombre del jugador ganador para mostrar en el menú final
 void Menu::setWinner(const std::string& winner) {
@@ -155,15 +134,16 @@ void Menu::menuGameOver() {
     items.clear();
     items.reserve(7);
     items.push_back("FIN DEL JUEGO");
+	items.push_back(" ");
     items.push_back("GANADOR: " + winnerText);
     items.push_back(" ");
-    items.push_back("BLANCO " + std::to_string(whiteScore) + " : " + std::to_string(blackScore) + " NEGRO");
+    items.push_back("  BLANCO " + std::to_string(whiteScore) + " : " + std::to_string(blackScore) + " NEGRO");
     items.push_back(" ");
-<<<<<<< HEAD
+
     items.push_back("  ENTER para jugar de nuevo");
+    items.push_back(" ");
     items.push_back("       ESC para salir");
-=======
-    items.push_back("ENTER para jugar de nuevo");
-    items.push_back("ESC para salir");
->>>>>>> parent of 500db1d (AÃ‘ADIR INTERACCION TECLA A POR TECLADO)
+
+    
+
 }

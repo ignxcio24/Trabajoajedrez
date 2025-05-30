@@ -230,7 +230,10 @@ void Reglas::updateMov(int value, vector2D origen, vector2D destino, std::array<
             ETSIDI::play("sonidos/desplazamiento.mp3");
         }
         else {
-            ETSIDI::play("sonidos/ataque.mp3");
+            if(value>0)
+                ETSIDI::play("sonidos/atacaangel.mp3");
+            else
+                ETSIDI::play("sonidos/ataquedemon.mp3");
         }
         // ACTUALIZAMOS MOVIMIENTO DEL COMPUTADOR
         board[static_cast<int>(destino.x)][static_cast<int>(destino.z)] = board[static_cast<int>(origen.x)][static_cast<int>(origen.z)];

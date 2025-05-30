@@ -159,6 +159,11 @@ void Mundo::tecla(unsigned char key) {
 			piezas.setMode(modeFlag);
 			return;
 		}
+        else if (key == 'a' || key == 'A') {
+            ETSIDI::play("sonidos/carga.mp3");
+            menu.mostrarInstrucciones = false;
+            return;
+        }
         break;
     case PLAYING:
         if (!rotationFlag) {

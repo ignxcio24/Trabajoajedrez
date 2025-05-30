@@ -43,7 +43,7 @@ void Menu::dibuja() {
     glDisable(GL_DEPTH_TEST); // Desactiva profundidad para que el texto se vea sobre todo
     glColor3f(1.0f, 1.0f, 1.0f); // Texto en blanco
      
-    float y = 0.45f;
+    float y = 0.70f;
     float dy = -0.15f;  // Espaciado entre líneas
     int i = 0;
     for (const auto& line : items) { 
@@ -90,6 +90,8 @@ void Menu::menuStart() {
         items.push_back(" - M : cambiar VS");
         items.push_back(" - T : cambiar modo tablero");
         items.push_back(" - P : pausar");
+        items.push_back(" - A : volver a l menu principal");
+        items.push_back(" - ENTER para comenzar");
         //items.push_back("   ENTER para comenzar");
     }
   

@@ -1,85 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\",
+  "WorkspaceRootPath": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\mundo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\mundo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\juego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\juego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\mundo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\mundo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reglas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\computador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\juego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\juego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\losa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\losa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\losa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\replay.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\replay.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\vector2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\vector2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\textura.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\textura.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\textura.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\plataforma.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Juego.vcxproj|solutionrelative:src\\plataforma.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -90,97 +90,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "reina.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reina.cpp",
-              "RelativeDocumentMoniker": "src\\reina.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reina.cpp",
-              "RelativeToolTip": "src\\reina.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:48:11.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "peon.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\peon.cpp",
-              "RelativeDocumentMoniker": "src\\peon.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\peon.cpp",
-              "RelativeToolTip": "src\\peon.cpp",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:29:51.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "losa.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\losa.cpp",
-              "RelativeDocumentMoniker": "src\\losa.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\losa.cpp",
-              "RelativeToolTip": "src\\losa.cpp",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:28:47.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "color.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp",
-              "RelativeDocumentMoniker": "src\\color.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\color.cpp",
-              "RelativeToolTip": "src\\color.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:29:24.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "caballo.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\caballo.cpp",
-              "RelativeDocumentMoniker": "src\\caballo.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\caballo.cpp",
-              "RelativeToolTip": "src\\caballo.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:29:22.672Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\alfil.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\alfil.cpp",
               "RelativeDocumentMoniker": "src\\alfil.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\alfil.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\alfil.cpp",
               "RelativeToolTip": "src\\alfil.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T13:29:19.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T13:29:19.637Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "pieza.h",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.h",
               "RelativeDocumentMoniker": "src\\pieza.h",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\pieza.h",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\pieza.h",
               "RelativeToolTip": "src\\pieza.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -190,9 +120,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "vector2D.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.cpp",
               "RelativeDocumentMoniker": "src\\vector2D.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.cpp",
               "RelativeToolTip": "src\\vector2D.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -202,9 +132,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "vector2D.h",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.h",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.h",
               "RelativeDocumentMoniker": "src\\vector2D.h",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\vector2D.h",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\vector2D.h",
               "RelativeToolTip": "src\\vector2D.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -214,22 +144,21 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "replay.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.cpp",
               "RelativeDocumentMoniker": "src\\replay.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.cpp",
               "RelativeToolTip": "src\\replay.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T07:46:32.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T07:46:32.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "replay.h",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.h",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.h",
               "RelativeDocumentMoniker": "src\\replay.h",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\replay.h",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\replay.h",
               "RelativeToolTip": "src\\replay.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -237,11 +166,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "reglas.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reglas.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp",
               "RelativeDocumentMoniker": "src\\reglas.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\reglas.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reglas.cpp",
               "RelativeToolTip": "src\\reglas.cpp",
               "ViewState": "AgIAAN8AAAAAAAAAAAAAAOcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -250,24 +179,109 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "menu.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\menu.cpp",
+              "RelativeDocumentMoniker": "src\\menu.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\menu.cpp",
+              "RelativeToolTip": "src\\menu.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-28T18:58:53.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mundo.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\mundo.cpp",
+              "RelativeDocumentMoniker": "src\\mundo.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\mundo.cpp",
+              "RelativeToolTip": "src\\mundo.cpp",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAKAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-28T18:58:18.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "caballo.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\caballo.cpp",
+              "RelativeDocumentMoniker": "src\\caballo.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\caballo.cpp",
+              "RelativeToolTip": "src\\caballo.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T13:29:22.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "color.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\color.cpp",
+              "RelativeDocumentMoniker": "src\\color.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\color.cpp",
+              "RelativeToolTip": "src\\color.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T13:29:24.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "losa.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\losa.cpp",
+              "RelativeDocumentMoniker": "src\\losa.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\losa.cpp",
+              "RelativeToolTip": "src\\losa.cpp",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T13:28:47.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "peon.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\peon.cpp",
+              "RelativeDocumentMoniker": "src\\peon.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\peon.cpp",
+              "RelativeToolTip": "src\\peon.cpp",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T13:29:51.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "reina.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reina.cpp",
+              "RelativeDocumentMoniker": "src\\reina.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\reina.cpp",
+              "RelativeToolTip": "src\\reina.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T13:48:11.787Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "logger.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.cpp",
               "RelativeDocumentMoniker": "src\\logger.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.cpp",
               "RelativeToolTip": "src\\logger.cpp",
               "ViewState": "AgIAABoAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T23:42:23.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T23:42:23.331Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "logger.h",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.h",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.h",
               "RelativeDocumentMoniker": "src\\logger.h",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\logger.h",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\logger.h",
               "RelativeToolTip": "src\\logger.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -275,24 +289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "menu.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\menu.cpp",
-              "RelativeDocumentMoniker": "src\\menu.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\menu.cpp",
-              "RelativeToolTip": "src\\menu.cpp",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAI8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T18:58:53.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 18,
               "Title": "textura.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\textura.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\textura.cpp",
               "RelativeDocumentMoniker": "src\\textura.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\textura.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\textura.cpp",
               "RelativeToolTip": "src\\textura.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -302,9 +303,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "plataforma.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\plataforma.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp",
               "RelativeDocumentMoniker": "src\\plataforma.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\plataforma.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\plataforma.cpp",
               "RelativeToolTip": "src\\plataforma.cpp",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -312,42 +313,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "mundo.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\mundo.cpp",
-              "RelativeDocumentMoniker": "src\\mundo.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\mundo.cpp",
-              "RelativeToolTip": "src\\mundo.cpp",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAwwGcBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "juego.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\juego.cpp",
+              "RelativeDocumentMoniker": "src\\juego.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\juego.cpp",
+              "RelativeToolTip": "src\\juego.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T18:58:18.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T18:58:11.268Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "juego.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\juego.cpp",
-              "RelativeDocumentMoniker": "src\\juego.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\juego.cpp",
-              "RelativeToolTip": "src\\juego.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T18:58:11.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "computador.cpp",
-              "DocumentMoniker": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\computador.cpp",
+              "DocumentMoniker": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\computador.cpp",
               "RelativeDocumentMoniker": "src\\computador.cpp",
-              "ToolTip": "C:\\Users\\igcab\\OneDrive\\Documentos\\GitHub\\Trabajoajedrez\\src\\computador.cpp",
+              "ToolTip": "C:\\UPM\\3ER A\u00D1O\\Segundo Semestre\\Inform\u00E1tica Industrial\\TRABAJO AJEDREZ\\Trabajoajedrez\\src\\computador.cpp",
               "RelativeToolTip": "src\\computador.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-28T18:58:03.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T18:58:03.852Z"
             }
           ]
         }

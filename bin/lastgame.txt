@@ -1,5 +1,0 @@
-w Q b2 c3
-b Q d6 a3
-w Q c3 a3
-b H b6 c4
-w Q a3 e3

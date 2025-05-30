@@ -6,13 +6,34 @@
 #include <math.h>
 #include <string>
 
-Computador::Computador(): 
+// -----------------------------------------------------------------------------
+// Clase Computador: Encargada de la lógica de la máquina en el modo vs máquina.
+// Implementa el algoritmo de decisión de movimientos para las piezas negras.
+// -----------------------------------------------------------------------------
+
+// Constructor del Computador.
+// Inicializa las variables de movimiento a valores inválidos.
+Computador::Computador() :
     movOrigPos(-1, -1), movOrigVal(0),
     movDestPos(-1, -1), movDestVal(-10)
-{}
+{
+}
+
+// Destructor del Computador (no realiza ninguna acción especial).
 Computador::~Computador() {}
 
+<<<<<<< Updated upstream
 void Computador::makeMoveOpening(bool openingFlag, bool turnFlag, bool autopilotFlag, std::array<std::array<int, 6>, 5>& board) {
+=======
+// -----------------------------------------------------------------------------
+// makeMoveOpening
+// Realiza una jugada de apertura automática para la máquina negra.
+// Solo se ejecuta si es el turno de la máquina, está en modo apertura y el modo automático está activo.
+// Elige aleatoriamente entre varias jugadas de apertura válidas y las ejecuta en el tablero.
+// -----------------------------------------------------------------------------
+void Computador::makeMoveOpening(bool openingFlag, bool turnFlag, bool autopilotFlag, std::array<std::array<int, 6>, 5>& board)
+{
+>>>>>>> Stashed changes
     if (!openingFlag || !turnFlag || !autopilotFlag)
         return;
     // RANDOM DE 0 A 6
@@ -20,6 +41,7 @@ void Computador::makeMoveOpening(bool openingFlag, bool turnFlag, bool autopilot
     int r = std::rand() % 7;
 
     if (r >= 0 && r <= 4) {
+<<<<<<< Updated upstream
         Reglas::updateMov(-1, {static_cast<float>(r), 4.0f}, {static_cast<float>(r), 3.0f}, board);
     }
     else if (r == 5) {  
@@ -27,8 +49,27 @@ void Computador::makeMoveOpening(bool openingFlag, bool turnFlag, bool autopilot
     }
     else if (r == 6) {
         Reglas::updateMov(-3, { 3.0f, 5.0f }, { 2.0f, 3.0f }, board);
+=======
+        // Mueve un peón negro hacia adelante en una columna aleatoria.
+        imprimirComputerMov(-1, { static_cast<float>(r), 4.0f }, { static_cast<float>(r), 3.0f }, board);
+    }
+    else if (r == 5) {
+        // Mueve el caballo negro desde su posición inicial.
+        imprimirComputerMov(-3, { 3.0f, 5.0f }, { 4.0f, 3.0f }, board);
+    }
+    else if (r == 6) {
+        // Mueve el otro caballo negro.
+        imprimirComputerMov(-3, { 3.0f, 5.0f }, { 2.0f, 3.0f }, board);
+>>>>>>> Stashed changes
     }
 }
+
+// -----------------------------------------------------------------------------
+// makeMove
+// Realiza un movimiento automático para la máquina negra en su turno.
+// Busca el mejor movimiento posible que no deje al rey en jaque, priorizando capturas de mayor valor.
+// Devuelve true si se realizó un movimiento, false si no hay movimientos válidos.
+// -----------------------------------------------------------------------------
 bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::array<int, 6>, 5>& board) {
     if (autopilotFlag != 1 || turnFlag != 1)
         return false;
@@ -40,6 +81,7 @@ bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::arr
     }
     bool foundMove = false;
 
+    // Recorre todas las piezas negras y sus posibles movimientos.
     for (int x = 0; x < 5; x++) {
         for (int z = 0; z < 6; z++) {
             int origVal = board[x][z];
@@ -67,6 +109,7 @@ bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::arr
 
                     int destVal = board[destX][destZ];
                     if (!foundMove) {
+                        // Guarda el primer movimiento válido encontrado.
                         movOrigPos = origPos;
                         movOrigVal = origVal;
                         movDestPos = destPos;
@@ -74,6 +117,7 @@ bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::arr
                         foundMove = true;
                     }
                     else {
+                        // Prioriza capturas de mayor valor o piezas de mayor valor.
                         if (destVal > movDestVal ||
                             (destVal == movDestVal && origVal > movOrigVal)) {
                             movOrigPos = origPos;
@@ -86,6 +130,7 @@ bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::arr
             }
         }
     }
+    // Si se encontró un movimiento válido, lo ejecuta.
     if (foundMove &&
         movOrigPos.x != -1 && movOrigPos.z != -1 &&
         movDestPos.x != -1 && movDestPos.z != -1) {
@@ -97,6 +142,13 @@ bool Computador::makeMove(bool turnFlag, bool autopilotFlag, std::array<std::arr
         return false;
     }
 }
+
+// -----------------------------------------------------------------------------
+// makeMoveKingSafe
+// Realiza un movimiento defensivo para proteger al rey negro si está en jaque.
+// Prioriza: capturar la pieza atacante, mover el rey, o bloquear la línea de ataque.
+// Devuelve true si se realizó un movimiento seguro, false si no hay opciones.
+// -----------------------------------------------------------------------------
 bool Computador::makeMoveKingSafe(bool turnFlag, bool autopilotFlag, std::array<std::array<int, 6>, 5>& board) {
     if (autopilotFlag != 1 || turnFlag != 1)
         return false;
@@ -109,13 +161,18 @@ bool Computador::makeMoveKingSafe(bool turnFlag, bool autopilotFlag, std::array<
     }
     // Variables de candidato para cada opción (sin usar struct extra).
     bool foundCapture = false, foundKing = false, foundBlock = false;
-    
+
     vector2D bestCaptureOrigPos, bestCaptureDestPos;
     int bestCaptureOrigVal = 0;        // En caso de empate, movemos el menos costoso para negros (mejor orig -1 que -6).
     int bestCaptureDestVal = -10;      // Mayor valor capturado mejor, de -5 a +6.
 
+<<<<<<< Updated upstream
     vector2D bestKingOrigPos, bestKingDestPos;   
     //int bestKingOrigVal = -6;        // Movemos el rey negro (-6).
+=======
+    vector2D bestKingOrigPos, bestKingDestPos;
+    int bestKingOrigVal = -6;        // Movemos el rey negro (-6).
+>>>>>>> Stashed changes
     int bestKingDestVal = -10;         // Peor caso comer a la reina negra (-5), mejor caso comer al rey negro (+6).
 
     vector2D bestBlockOrigPos, bestBlockDestPos;
@@ -163,7 +220,22 @@ bool Computador::makeMoveKingSafe(bool turnFlag, bool autopilotFlag, std::array<
                             //std::cout << "Capturar\n";
                         }
                     }
+<<<<<<< Updated upstream
                     // Opción B: Bloquear la línea de ataque (si no es rey ni caballo)
+=======
+                    // Opción B: Mover el rey para esquivar el jaque.
+                    if (origVal == -6 && destVal > bestKingDestVal) {
+                        if (!foundKing || (destVal > bestKingDestVal) || (destVal == bestKingDestVal)) {
+                            bestKingOrigPos = origPos;
+                            bestKingOrigVal = -6;
+                            bestKingDestPos = destPos;
+                            bestKingDestVal = destVal;
+                            foundKing = true;
+                            //std::cout << "Esquivar\n";
+                        }
+                    }
+                    // Opción C: Bloquear la línea de ataque (si no es rey ni caballo)
+>>>>>>> Stashed changes
                     if (origVal != -6 && origVal != -3 && destVal > bestBlockDestVal) { // destVal == 0
                         if (destX == static_cast<int>(kingPos.x) || destZ == static_cast<int>(kingPos.z) ||
                             (abs(destX - static_cast<int>(kingPos.x)) == abs(destZ - static_cast<int>(kingPos.z)))) {
@@ -220,4 +292,41 @@ bool Computador::makeMoveKingSafe(bool turnFlag, bool autopilotFlag, std::array<
         //std::cout << "Computadora no encontro movimiento seguro para el rey.\n";
         return false;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+// -----------------------------------------------------------------------------
+// imprimirComputerMov
+// Ejecuta el movimiento seleccionado por la máquina y lo muestra por consola.
+// Actualiza el tablero y muestra el movimiento en notación abreviada.
+// -----------------------------------------------------------------------------
+void Computador::imprimirComputerMov(int pieceVal, vector2D origen, vector2D destino, std::array<std::array<int, 6>, 5>& board) const {
+    if (origen.x != -1 && origen.z != -1 &&
+        destino.x != -1 && destino.z != -1) {
+        // ACTUALIZAMOS MOVIMIENTO DEL COMPUTADOR
+        board[(int)destino.x][(int)destino.z] = board[(int)origen.x][(int)origen.z];
+        board[(int)origen.x][(int)origen.z] = 0;
+
+        int piece = abs(pieceVal);
+        char abrev = '?';
+        switch (piece) {
+        case 1: abrev = 'P'; break; // Peón
+        case 2: abrev = 'R'; break; // Torre
+        case 3: abrev = 'H'; break; // Caballo
+        case 4: abrev = 'B'; break; // Alfil
+        case 5: abrev = 'Q'; break; // Reina
+        case 6: abrev = 'K'; break; // Rey
+        default: break;
+        }
+        char col_orig = 'e' - static_cast<int>(origen.x);
+        int row_orig = static_cast<int>(origen.z) + 1;
+        char col_dest = 'e' - static_cast<int>(destino.x);
+        int row_dest = static_cast<int>(destino.z) + 1;
+
+        // Imprime el movimiento realizado por la máquina en notación abreviada.
+        std::cout << "b " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
+    }
+}
+>>>>>>> Stashed changes

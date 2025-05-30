@@ -1,19 +1,50 @@
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+﻿  mundo.cpp
+  Juego.vcxproj -> C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\bin\Juego.exe
+=======
+<<<<<<< HEAD
 ﻿  alfil.cpp
   caballo.cpp
   color.cpp
   computador.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\computador.cpp(20,25): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   losa.cpp
   menu.cpp
   mundo.cpp
   juego.cpp
   peon.cpp
   pieza.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.cpp(156,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\pieza.cpp(156,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   reina.cpp
   rey.cpp
   reglas.cpp
-  plataforma.cpp
-  textura.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(14,162): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(14,173): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,70): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,81): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,134): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,145): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,212): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,223): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,277): warning C4244: 'argumento': conversión de 'float' a 'std::array<std::array<int,6>,5>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(25,288): warning C4244: 'argumento': conversión de 'float' a 'std::array<int,6>::size_type'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(38,21): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\reglas.cpp(38,45): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+  tablero.cpp
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\tablero.cpp(14,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\src\tablero.cpp(14,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   torre.cpp
   vector2D.cpp
   Generando código...
   Juego.vcxproj -> C:\UPM\3ER AÑO\Segundo Semestre\Informática Industrial\TRABAJO AJEDREZ\Trabajoajedrez\bin\Juego.exe
+=======
+﻿  mundo.cpp
+  Juego.vcxproj -> C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Juego.exe
+>>>>>>> 40da0b864f98b4bde5e12f5a1b9f6d2e15e33fcd
+>>>>>>> Stashed changes
+=======
+﻿  menu.cpp
+  Juego.vcxproj -> C:\Users\igcab\OneDrive\Documentos\GitHub\Trabajoajedrez\bin\Juego.exe
+>>>>>>> 6c28cc41d8bca757a3296a58d65734744b5ef605

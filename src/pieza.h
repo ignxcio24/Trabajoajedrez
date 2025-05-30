@@ -6,7 +6,12 @@
 #include <array>
 #include <string>
 #include <memory>
+<<<<<<< Updated upstream
 #include <math.h>
+=======
+#include <cmath>
+#include "ETSIDI.h"
+>>>>>>> Stashed changes
 
 GLUquadric* getSharedQuadric(); //Dbuja primitivas curvas. La función definida getSharedQuadric, permite reutilizar el puntero.
 
@@ -16,10 +21,20 @@ protected: //Miembros accesibles por las clases derivadas.
     Color color;             //Color de la pieza (ej. blanco o negro)
     vector2D posicion;       //Posición (x, y) en el tablero
 
+<<<<<<< Updated upstream
 
     std::array<std::array<int, 6>, 5> board;  //Representación del tablero
     vector2D seleccion;                       //Posición seleccionada               
     bool othermode;                           //Tipo de modo                  
+=======
+    std::array<std::array<int, 6>, 5> board;  // Representación del tablero
+    vector2D seleccion;      // Posición seleccionada
+    bool othermode;          // Modo de juego
+    ETSIDI::SpriteSequence sprite{ "imagenes/pangPlayer.png", 5 };
+public: // Miembros accesibles desde cualquier parte en la que se añade la clase.
+    Pieza(); //Constructor por defecto
+    virtual ~Pieza();
+>>>>>>> Stashed changes
 
 public: //Miembros accesibles desde cualquier parte en la que se añade la clase.
 

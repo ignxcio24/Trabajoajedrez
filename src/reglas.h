@@ -1,7 +1,12 @@
 #include <array>
 #include "vector2D.h"
+<<<<<<< Updated upstream
 #include "plataforma.h"
 
+=======
+#include "tablero.h"
+#include "ETSIDI.h"
+>>>>>>> Stashed changes
 class Reglas {
 public:
     Reglas();

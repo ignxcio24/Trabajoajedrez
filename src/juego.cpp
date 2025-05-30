@@ -72,6 +72,7 @@ void OnMouseClick(int button, int state, int x, int y) {
 	}
 	else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
 		world.rightClick(x, y); 
+		
 	}
 }
 void OnTimer(int value){

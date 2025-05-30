@@ -159,6 +159,12 @@ void Mundo::tecla(unsigned char key) {
 			piezas.setMode(modeFlag);
 			return;
 		}
+        else if((key == 'a' || key == 'A')) {
+            ETSIDI::play("sonidos/carga.mp3");
+            menu.mostrarInstrucciones = false;
+            glutPostRedisplay();
+            return;
+        }
         break;
     case PLAYING:
         if (!rotationFlag) {
@@ -244,11 +250,18 @@ void Mundo::leftClick(int mouse_x, int mouse_y) {
     int board_x = static_cast<int>(world_x - 0.5f);
     int board_z = static_cast<int>(world_z - 0.5f);
 
+<<<<<<< Updated upstream
     if (board_x >= 0 && board_x < 5 && board_z >= 0 && board_z < 6 && clickFlag) {
         piezas.seleccionar(board_x, board_z, turnFlag, platform);
         bool castling = (turnFlag ? blackCastlingF : whiteCastlingF);
         int pc = piezas.getBoard()[board_x][board_z];
         if (castling && abs(pc) == 6) Reglas::displayCastling(pc, { static_cast<float>(board_x), static_cast<float>(board_z) }, piezas.getBoard(), platform.getTiles());
+=======
+    //Verifica si el click está dentro del tablero y si se puede seleccionar
+    if (boardX >= 0 && boardX < 5 && boardZ >= 0 && boardZ < 6 && clickFlag) {
+        piezas.seleccionar(boardX, boardZ, turnFlag, platform);
+        
+>>>>>>> Stashed changes
     }
 }
 void Mundo::rightClick(int mouse_x, int mouse_y) {
@@ -273,6 +286,7 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
     vector2D destino = { static_cast<float>(board_x), static_cast<float>(board_z) };
     if (destino.x >= 0 && destino.x < 5 && destino.z >= 0 && destino.z < 6) {
         vector2D seleccion = piezas.getSeleccion();
+<<<<<<< Updated upstream
         if (seleccion.x != -1 && seleccion.z != -1) {
             int value = piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)];
             if ((turnFlag == 0 && value > 0) || (turnFlag == 1 && value < 0)) {
@@ -292,6 +306,34 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
                 // ACTUALIZAMOS E IMPRIMIMOS EL MOVIMIENTO
                 Reglas::updateMov(value, seleccion, destino, piezas.getBoard());
 
+=======
+
+        //Si la selección no es -1, significa que hay una pieza seleccionada
+        if (seleccion.x != -1 && seleccion.z != -1) {
+            //selección las he definido en piezas.seleccionar, estás selccionando las casillas que quieres mover,
+            //las ponemos en 0 y definimos otra coordenadas de destino, borra la pieza de donde está y las imprime en
+            //la de destino cumpliendo las reglas y estando dentro del tablero
+            int piece = piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)];
+            if ((turnFlag == 0 && piece > 0) || (turnFlag == 1 && piece < 0)) {
+                if ((seleccion.z == destino.z && seleccion.x == destino.x) ||
+                    !Reglas::moveChecker(piece, seleccion, destino, piezas.getBoard()))
+                    return;
+                int& destinoCell = piezas.getBoard()[static_cast<int>(destino.x)][static_cast<int>(destino.z)];
+
+                if (destinoCell != 0) {
+                    int capturada = destinoCell;
+            
+                    ETSIDI::play("sonidos/comerpieza.mp3");
+                }
+                else
+                    ETSIDI::play("sonidos/moverpieza.mp3");
+                //El destino
+                piezas.getBoard()[static_cast<int>(destino.x)][static_cast<int>(destino.z)] = piece;
+                piezas.getBoard()[static_cast<int>(seleccion.x)][static_cast<int>(seleccion.z)] = 0;
+                imprimirMov(piece, seleccion, destino);
+                
+                //Deja de seleccionar una pieza y se seleccionan los cuadrados amarillos
+>>>>>>> Stashed changes
                 piezas.deseleccionar();
                 platform.resetTileColors();
                 if (!autopilotFlag && turnFlag) {
@@ -314,8 +356,13 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
 				}
                 else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                     jaqueFlag = true;
+<<<<<<< Updated upstream
                     ETSIDI::play("sonidos/jaque.mp3");
                     //std::cout << "Jaque!\n";
+=======
+                    std::cout << "Jaque!\n";
+                    ETSIDI::play("sonidos/jaque.mp3");
+>>>>>>> Stashed changes
                 }
                 else {
                     jaqueFlag = false;
@@ -347,11 +394,19 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
                     else if (Reglas::jaqueMate(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                         endFlag = true;
                         turnFlag = !turnFlag;
+<<<<<<< Updated upstream
                         //std::cout << "JaqueMate!\n";
                     }
                     else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
                         ETSIDI::play("sonidos/jaque.mp3");
                         //std::cout << "Jaque!\n";
+=======
+
+                    }
+                    else if (Reglas::jaque(!turnFlag, piezas.getBoard(), platform.getTiles())) {
+                        std::cout << "Jaque!\n";
+                        ETSIDI::play("sonidos/jaque.mp3");
+>>>>>>> Stashed changes
                     }
                 }
             }
@@ -360,13 +415,44 @@ void Mundo::rightClick(int mouse_x, int mouse_y) {
     glutPostRedisplay();
     // COMPROBACION FIN DEL JUEGO.
     if (endFlag) {
+<<<<<<< Updated upstream
         std::string winner = turnFlag ? "NEGRO" : "BLANCO";
         turnFlag ? ETSIDI::play("sonidos/derrota.mp3") : ETSIDI::play("sonidos/victoria.mp3");
         //std::cout << "Jaque Mate!\n";
         //std::cout << "Ganador: " << winner << std::endl;
+=======
+        std::string winner = (turnFlag == 0) ? "BLANCO" : "NEGRO";
+        std::cout << "Jaque Mate!\n";
+        ETSIDI::play("sonidos/victoria.mp3");
+        std::cout << "Ganador: " << winner << std::endl;
+>>>>>>> Stashed changes
         menu.setWinner(winner);
 		menu.setScores();
         currentScreen = GAME_OVER;
         return;
     }
+<<<<<<< Updated upstream
+=======
+}
+//Te sale en pantalla lo que vas haciendo para que se registre
+//Es un pseudocódigo para saber donde están las cosas de forma escrita
+void Mundo::imprimirMov(int piece, vector2D origen, vector2D destino) const {
+    char turno = (turnFlag == 0) ? 'w' : 'b';
+    char abrev = '?';
+    switch (abs(piece)) {
+    case 1: abrev = 'P'; break; // Peón
+    case 2: abrev = 'R'; break; // Torre
+    case 3: abrev = 'H'; break; // Caballo
+    case 4: abrev = 'B'; break; // Alfil
+    case 5: abrev = 'Q'; break; // Reina
+    case 6: abrev = 'K'; break; // Rey
+    default: break;
+    }
+    char col_orig = 'e' - static_cast<int>(origen.x);
+    int row_orig = static_cast<int>(origen.z) + 1;
+    char col_dest = 'e' - static_cast<int>(destino.x);
+    int row_dest = static_cast<int>(destino.z) + 1;
+    std::cout << turno << " " << abrev << " " << col_orig << row_orig << " " << col_dest << row_dest << std::endl;
+    
+>>>>>>> Stashed changes
 }

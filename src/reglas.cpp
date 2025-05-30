@@ -55,6 +55,7 @@ bool Reglas::moveChecker(int value, vector2D origen, vector2D destino, std::arra
 void Reglas::displayValidMoves(int value, vector2D origen, std::array<std::array<int, 6>, 5>& board, std::array<std::array<Losa, 6>, 5>& tiles) {
     for (int j = 0; j < 6; ++j) {
         for (int i = 0; i < 5; ++i) {
+<<<<<<< Updated upstream
             if (moveChecker(value, origen, { static_cast<float>(i), static_cast<float>(j) }, board)) {
                 if ((board[i][j] < 0 && value > 0) || (board[i][j] > 0 && value < 0)) {
                     tiles[static_cast<int>(origen.x)][static_cast<int>(origen.z)].setColor({ dangerous });
@@ -63,6 +64,12 @@ void Reglas::displayValidMoves(int value, vector2D origen, std::array<std::array
                 else {
 					tiles[i][j].setColor({ valid });
 				}
+=======
+            if (moveChecker(piece, origen, { static_cast<float>(i), static_cast<float>(j) }, board)) {
+                //std::cout << i << ", " << j << " mov. valido\n";
+                tiles[i][j].setColor({valid});//muestra con un color diferente, las casillas a las que se puede mover la pieza seleccionada
+               
+>>>>>>> Stashed changes
             }
         }
     }
@@ -102,11 +109,19 @@ bool Reglas::jaque(bool turnFlag, std::array<std::array<int, 6>, 5>& board, std:
             if (pc == 0) continue;
             if ((turnFlag == 0 && pc <= 0) || (turnFlag == 1 && pc >= 0))
                 continue; 
+<<<<<<< Updated upstream
 
             vector2D piecePos = { static_cast<float>(i), static_cast<float>(j) };
             if (moveChecker(pc, piecePos, kingPos, board)) {
                 displayDanger(kingPos, tiles); // REY EN PELIGRO
                 displayDangerous(piecePos, tiles); // ATACANTE PELIGROSO
+=======
+            vector2D attackerPos = { static_cast<float>(i), static_cast<float>(j) };
+            if (moveChecker(attackingPiece, attackerPos, enemyKingPos, board)) {
+                displayDanger(enemyKingPos, tiles); // REY EN PELIGRO
+                displayDangerous(attackerPos, tiles); // ATACANTE PELIGROSO
+                
+>>>>>>> Stashed changes
                 return true; // JAQUE
             }
         }
@@ -172,12 +187,20 @@ bool Reglas::jaqueMate(bool turnFlag, std::array<std::array<int, 6>, 5>& board, 
                                 kingAttacked = true;
                         }
                     }
+<<<<<<< Updated upstream
                     if (!kingAttacked)
                         return false;
+=======
+                    if (!kingStillInCheck) {
+                        legalMoveFound = true;
+
+                    }
+>>>>>>> Stashed changes
                 }
             }
         }
     }
+<<<<<<< Updated upstream
     return true; // JAQUE MATE!
 }
 bool Reglas::enroqueChecker(bool turn, vector2D origenKing, vector2D destinoKing, std::array<std::array<int, 6>, 5>& board) {
@@ -260,4 +283,8 @@ void Reglas::updateMov(int value, vector2D origen, vector2D destino, std::array<
         logger::info(mov.str().c_str());
     
     }
+=======
+
+    return !legalMoveFound;
+>>>>>>> Stashed changes
 }

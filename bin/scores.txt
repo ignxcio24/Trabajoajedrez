@@ -1,1 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< Updated upstream
 9 6
+=======
+3 2
+>>>>>>> Stashed changes
+=======
+10 11
+>>>>>>> 6c28cc41d8bca757a3296a58d65734744b5ef605

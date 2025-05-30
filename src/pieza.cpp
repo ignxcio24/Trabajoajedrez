@@ -21,6 +21,7 @@ GLUquadric* getSharedQuadric() {
 Pieza::Pieza() : //Constructor por defecto
     size(1.0f),
     color(none),
+<<<<<<< Updated upstream
     posicion(0.0f, 0.0f), 
     seleccion(-1, -1), //No hay selección
 	board({}),      //Inicializa el tablero vacío
@@ -29,6 +30,95 @@ Pieza::Pieza() : //Constructor por defecto
 Pieza::~Pieza() {} 
 
 Pieza* Pieza::crear(int pieceValue) const { //Crea una nueva pieza según el valor de la pieza
+=======
+    posicion(0.0f, 0.0f),
+    seleccion(-1, -1), board({}),
+    othermode(false)
+    
+{
+    sprite.setCenter(0, 0);
+    sprite.setSize(0, 0);
+}
+Pieza::~Pieza() {}
+
+std::array<std::array<int, 6>, 5>& Pieza::getBoard() {
+    return board;
+}
+vector2D Pieza::getSeleccion() const {
+    return seleccion;
+}
+void Pieza::deseleccionar() {
+    seleccion = vector2D(-1, -1);
+}
+void Pieza::seleccionar(int ix, int iz, int turnFlag, Tablero& platform) {
+    int val = board[ix][iz];
+    if (val == 0)
+        return;
+    if ((turnFlag == 0 && val < 0) || (turnFlag == 1 && val > 0))
+        return;
+    seleccion = vector2D(static_cast<float>(ix), static_cast<float>(iz));
+   
+    platform.resetTileColors();
+    Reglas::displayValidMoves(val, seleccion, board, platform.getTiles());
+}
+void Pieza::guardarTablero(const std::string& filename, bool turnFlag, bool openingFlag) {
+    deseleccionar();
+    std::ofstream file(filename);
+    if (!file) {
+        std::cerr << "Error. No se pudo guardar el tablero.\n";
+        return;
+    }
+    for (int z = 0; z < 6; ++z) {
+        for (int x = 0; x < 5; ++x) {
+            file << board[x][z] << ' ';
+        }
+        file << '\n';
+    }
+    file << turnFlag << openingFlag << '\n';
+    std::cout << "Ultimo tablero guardado exitosamente.\n";
+}
+void Pieza::cargarTablero(const std::string& filename, bool& turnFlag, bool& openingFlag) {
+    std::ifstream file(filename);
+    if (!file) {
+        std::cerr << "Error. No se pudo cargar el ultimo tablero guardado.\n";
+        return;
+    }
+    for (int z = 0; z < 6; ++z) {
+        for (int x = 0; x < 5; ++x) {
+            file >> board[x][z];
+        }
+    }
+    file >> turnFlag >> openingFlag;
+    std::cout << "Ultimo tablero guardado cargado exitosamente\n";
+}
+void Pieza::setMode(bool omod) {
+    othermode = omod; //Guarda el valor recibido
+    if (!othermode) { //Si el modo es falso: esquinas opuestas
+        //////////"ESQUINAS OPUESTAS" //////////
+        std::array<std::array<int, 6>, 5> initBoard = { {
+            { 2,  1,  0,  0, -1, -6 },
+            { 3,  1,  0,  0, -1, -5 },
+            { 4,  1,  0,  0, -1, -4 },
+            { 5,  1,  0,  0, -1, -3 },
+            { 6,  1,  0,  0, -1, -2 }
+        } };
+        board = initBoard; //Asigna el tablero a la clase
+    }
+	else {          //Si el modo es verdadero: PETTY
+        //////////"PETTY"//////////
+        std::array<std::array<int, 6>, 5> initBoard = { {
+            { 5,  1,  0,  0, -1, -5 },
+            { 6,  1,  0,  0, -1, -6 },
+            { 4,  1,  0,  0, -1, -4 },
+            { 3,  1,  0,  0, -1, -3 },
+            { 2,  1,  0,  0, -1, -2 }
+        } };
+        board = initBoard;
+    }
+    deseleccionar();  //Al cambiar de modo, se deselecciona cualquier casilla previamente activa
+}
+Pieza* Pieza::createPiece(int pieceValue) const {
+>>>>>>> Stashed changes
     if (pieceValue == 0)
 		return nullptr;     //Si el valor es 0, no hay pieza
 
@@ -145,8 +235,23 @@ void Pieza::dibujarTablero() const {
             int value = board[i][j];
             if (value == 0)
                 continue;
+<<<<<<< Updated upstream
 
             Pieza* piece = crear(value);
+=======
+            // Coronazion del peon
+            if (value == 1 && z == 5) {
+                value = 5; // Reina
+                const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
+                ETSIDI::play("sonidos/upgradereina.mp3");
+            }
+            else if (value == -1 && z == 0) {
+                value = -5; // Reina
+                const_cast<std::array<std::array<int, 6>, 5>&>(board)[x][z] = value;
+                ETSIDI::play("sonidos/upgradereina.mp3");
+            }
+            Pieza* piece = createPiece(value);
+>>>>>>> Stashed changes
             if (!piece)
                 continue;
             piece->setPosicion(static_cast<float>(i + 1), static_cast<float>(j + 1));

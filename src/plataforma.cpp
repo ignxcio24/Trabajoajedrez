@@ -28,6 +28,20 @@ void Plataforma::dibuja() const {
 	//TEXTURIZADO DEL SUELO
 	texturizado(-10, 0, -9.75, 26, 26.5, "imagenes/fondoguerra.png", color.a);
 
+<<<<<<< Updated upstream:src/plataforma.cpp
+=======
+
+// Método que dibuja el tablero
+void Tablero::dibuja() const {
+	
+	glEnable(GL_TEXTURE_2D);
+	//glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/fondo.png").id);
+	glDisable(GL_LIGHTING);
+	glTexCoord2d(0, 1); glVertex2d(-10, 0);
+	glTexCoord2d(1, 1); glVertex2d(10, 0);
+	glTexCoord2d(1, 0); glVertex2d(10, 15);
+	glTexCoord2d(0, 0); glVertex2d(-10, 15);
+>>>>>>> Stashed changes:src/tablero.cpp
 	glBegin(GL_QUADS);
 	// Abajo
 	glNormal3f(0.0f, -1.0f, 0.0f);
@@ -76,8 +90,14 @@ void Plataforma::dibuja() const {
         for (const auto& tile : i) {
             tile.dibuja();
         }
+<<<<<<< Updated upstream:src/plataforma.cpp
     }	
 	glPopMatrix();
+=======
+    }
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
+>>>>>>> Stashed changes:src/tablero.cpp
 }
 void Plataforma::resetTileColors() {
 	for (int j = 0; j < 6; ++j) {

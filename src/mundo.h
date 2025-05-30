@@ -2,7 +2,7 @@
 #include "pieza.h"  
 #include "menu.h"
 #include "computador.h" 
-
+#include "ETSIDI.h"
 enum Pantalla {
     START,
     PLAYING,

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 10 11
+=======
+9 6
+>>>>>>> parent of 500db1d (AÑADIR INTERACCION TECLA A POR TECLADO)

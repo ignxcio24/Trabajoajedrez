@@ -13,7 +13,7 @@
 
 
 Reglas::Reglas() {};
-
+//comprueba los movimientos posibles
 bool Reglas::moveChecker(int value, vector2D origen, vector2D destino, std::array<std::array<int, 6>, 5>& board) {
     bool turn = (value > 0) ? 0 : 1;
     int kingValue = (turn ? -6 : 6);
@@ -91,6 +91,7 @@ vector2D Reglas::pieceFinder(int value, std::array<std::array<int, 6>, 5>& board
     }
     return { -1, -1 };
 }
+//cmprueba el jaque
 bool Reglas::jaque(bool turnFlag, std::array<std::array<int, 6>, 5>& board, std::array<std::array<Losa, 6>, 5>& tiles) {
     int kingValue = (turnFlag ? 6 : -6);
     vector2D kingPos = pieceFinder(kingValue, board);
@@ -180,6 +181,7 @@ bool Reglas::jaqueMate(bool turnFlag, std::array<std::array<int, 6>, 5>& board, 
     }
     return true; // JAQUE MATE!
 }
+//comprueba el enroque
 bool Reglas::enroqueChecker(bool turn, vector2D origenKing, vector2D destinoKing, std::array<std::array<int, 6>, 5>& board) {
     int rookVal = (turn ? -2 : 2);
     int oz = (turn ? 5 : 0);
@@ -197,6 +199,7 @@ bool Reglas::enroqueChecker(bool turn, vector2D origenKing, vector2D destinoKing
             return false;
     return (rookPos.x != -1 && (static_cast<float>(oz) == origenKing.z) && (origenKing.z == destinoKing.z) && (destinoKing.z == rookPos.z) && origenKing.x + (2 * dir) < 5 && destinoKing.x == (origenKing.x + (2 * dir)));
 }
+//movimiento de enroque
 void Reglas::enroqueMove(bool turn, vector2D origenKing, vector2D destinoKing, std::array<std::array<int, 6>, 5>& board) {
     int rookVal = (turn ? -2 : 2);
 

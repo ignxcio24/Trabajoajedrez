@@ -60,7 +60,7 @@ void Menu::dibuja() {
 }
 // Define los textos que aparecerán en el menú de inicio
 void Menu::menuStart() {
-
+	items.clear(); // Limpia los textos anteriores
     items.reserve(13);
     if (!mostrarInstrucciones) {
     items.push_back("  AJEDREZ");
